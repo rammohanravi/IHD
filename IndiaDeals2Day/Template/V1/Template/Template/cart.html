@@ -1,0 +1,876 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Template</title>
+
+<!--Site Mata Tags start Here -->
+<meta name="description" content="Template">
+<meta name="keywords" content="Template">
+<meta name="author" content="Crunch Press">
+<!-- FAVICON -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Style Sheets Start Here -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/megamenu.css" rel="stylesheet">
+<!-- Custom Styleheet -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="css/color.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Fontawsome -->
+
+<!-- Color Css Files Start -->
+<link rel="stylesheet" type="text/css" href="css/color-red.css" title="styles-red" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-blue.css" title="styles-blue" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-orange.css" title="styles-orange" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-aqua.css" title="styles-aqua" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-green.css" title="styles-green" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-purple.css" title="styles-purple" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-light.css" title="styles-light" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/boxed.css" title="styles-boxed" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/wide.css" title="styles-wide" media="screen" />
+<!-- Color Css Files End -->
+
+</head>
+<body>
+<div class="slide-out-div"> <a class="handle" href="#">Content</a>
+  <h3>Style Switcher</h3>
+  <div class="colors-sw">
+    <ul>
+      <li><a href="#" data-rel="styles-red" class="styleswitch"><img src="images/color/red.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-blue" class="styleswitch"><img src="images/color/blue.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-orange" class="styleswitch"><img src="images/color/orange.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-aqua" class="styleswitch"><img src="images/color/aqua.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-green" class="styleswitch"><img src="images/color/green.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-purple" class="styleswitch"><img src="images/color/purple.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-light" class="styleswitch">Light</a></li>
+      <li><a href="#" data-rel="styles-boxed" class="styleswitch">Boxed</a></li>
+      <li><a href="#" data-rel="styles-wide" class="styleswitch">Wide</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Main Wrapper Starts here -->
+<div class="wrapper home boxed"> 
+  
+  <!-- topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="top-black">
+        <div class="row">
+          <div class="span6">
+            <div id="loginContainer"> <span class="welcome">Welcome visitor you can <a href="#" id="loginButton"><span>Login</span></a> or <a href="register.html">create an account!</a></span>
+              <div style="clear:both"></div>
+              <div id="loginBox">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <fieldset>
+                      <label for="email">Email Address</label>
+                      <input type="text" name="email" id="email" />
+                    </fieldset>
+                    <fieldset>
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </fieldset>
+                    <input type="submit" id="login" value="Login" />
+                    <input type="submit" id="register" value="Register" />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <!-- Login Ends Here --> 
+            
+          </div>
+          <div class="span6">
+            <div class="topbar-dropdowns">
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Currency <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">US Dollar</a></li>
+                  <li><a href="#">Euro</a></li>
+                </ul>
+              </div>
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Lang <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Dutch</a></li>
+                </ul>
+              </div>
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> My Account <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#login">Login</a></li>
+                  <li><a href="#register">Register</a></li>
+                </ul>
+              </div>
+              <div class="btn-group top-search">
+                <div id="searchContainer"> <span class="welcome"><a href="#" id="searchButton"><i class="fa fa-search"></i></a></span>
+                  <div style="clear:both"></div>
+                  <div id="searchBox">
+                    <form id="searchForm">
+                      Search Here <small>*</small>
+                      <fieldset id="search">
+                        <fieldset>
+                          <input type="text" name="email"/>
+                        </fieldset>
+                        <input type="submit" name="Search" value="Search">
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="top-social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- topbar end --> 
+  
+  <!-- Header Start -->
+  <div class="header">
+    <div class="container">
+      <div class="row"> 
+        <!-- Logo -->
+        <div class="span3">
+          <div class="logo"><a href="index-2.html" title="Avetor Sports"> <img src="images/logo.png" alt="Avetor Sports"> </a></div>
+        </div>
+        <!-- Logo end -->
+        <div class="span9">
+          <div class="nav-holder">
+            <nav id="nav">
+              <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                  <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <div class="nav-collapse collapse">
+                    <div class="menu">
+                      <ul class="menu" id="mm">
+                        <li ><a href="index-2.html">Home</a></li>
+                        <li><a href="pro-men.html" class="arrow">Men</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic-men.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Clothings</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li><a href="pro-women.html" class="arrow">Women</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Clothings</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li><a href="pro-sports.html" class="arrow">Sports</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic-sports.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li class="activemm"><a href="#" class="arrow">Pages</a> 
+                          <!-- Drop-Down / Start -->
+                          <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faqs.html">FAQ's</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="password.html">Password</a></li>
+                            <li><a href="#">Gallery</a>
+                              <ul>
+                                <li><a href="gallery-col-2.html">Gallery Two Col</a></li>
+                                <li><a href="gallery-col-3.html">Gallery Three Col</a></li>
+                                <li><a href="gallery-col-4.html">Gallery Four Col</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Shop</a>
+                              <ul>
+                                <li><a href="products.html">Products Grid View</a></li>
+                                <li><a href="products-list.html">Products List View</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">Account</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="location-locator.html">Location</a></li>
+                          </ul>
+                          <!-- Drop-Down / End --> 
+                        </li>
+                        <li><a href="blog.html" class="arrow">Blog</a>
+                          <ul>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contactus.html">Contact Us</a>
+                        <li class="nav-last"><a href="#"><i class="fa fa-star-o"></i> <span class="hrating">30</span></a></li>
+                        <li class="nav-last2"><a href="#"><i class="fa fa-shopping-cart"></i> <span class="hcart">0</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--/.nav-collapse --> 
+                </div>
+                <!-- /.navbar-inner --> 
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End --> 
+  
+  <!-- Slider Start -->
+  <div class="inner-header-bg"> </div>
+  <!-- Slider End --> 
+  
+  <!-- ============================ Main Title Start ================================= -->
+  <div class="inner-title">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> <strong class="title">Cart</strong>
+          <h4>This Page is Cart</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Title End ================================= --> 
+  
+  <!-- ============================ Main Content Start ================================= -->
+  <div class="main-content">
+    <div class="container password">
+      <div class="row">
+        <div class="span12">
+          <div class="cart_table_holder">
+            <form method="post" action="#">
+              <table width="100%" cellpadding="5" border="0">
+                <thead>
+                  <tr class="cart-top-bg">
+                    <th width="10%" class="product-preview">Preview</th>
+                    <th width="35%" class="product-name">Detail</th>
+                    <th width="15%" class="product-price">Price</th>
+                    <th width="15%" class="product-quantity">Quantity</th>
+                    <th width="15%" class="product-subtotal">Total</th>
+                    <th width="10%" class="product-remove">Trash</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cart_table_item"> 
+                    <!-- Remove from cart link --> 
+                    
+                    <!-- The thumbnail -->
+                    <td width="15%" class="img"><a href="#"><img alt="harmonium" class="attachment-shop_thumbnail wp-post-image" src="images/cart1.jpg"></a></td>
+                    
+                    <!-- Product Name -->
+                    <td width="30%;" class="product-name"><a href="#">Nulla sit amet aliquam magna</a> <span>Product code: 123406</span></td>
+                    
+                    <!-- Product price -->
+                    <td class="product-price"><span class="amount">$1,475</span></td>
+                    
+                    <!-- Quantity inputs -->
+                    <td class="product-quantity"><div class="quantity buttons_added"> <span class="numeric-stepper">
+                        <button type="submit" name="ns_button_1" value="1" class="plus">+</button>
+                        <input type="text" name="ns_textbox" size="2" class="input-text qty text" />
+                        <button type="submit" name="ns_button_2" value="-1" class="minus">-</button>
+                        </span> </div></td>
+                    
+                    <!-- Product subtotal -->
+                    <td class="product-subtotal"><span class="amount">$2,950</span></td>
+                    <td class="product-remove"><a title="Remove this item" href="#"><i class="fa fa-trash-o"></i></a></td>
+                  </tr>
+                  <tr class="cart_table_item"> 
+                    <!-- Remove from cart link --> 
+                    
+                    <!-- The thumbnail -->
+                    <td width="15%" class="img"><a href="#"><img alt="harmonium" class="attachment-shop_thumbnail wp-post-image" src="images/cart2.jpg"></a></td>
+                    
+                    <!-- Product Name -->
+                    <td width="30%;" class="product-name"><a href="#">Nulla sit amet aliquam magna</a> <span>Product code: 123406</span></td>
+                    
+                    <!-- Product price -->
+                    <td class="product-price"><span class="amount">$1,475</span></td>
+                    
+                    <!-- Quantity inputs -->
+                    <td class="product-quantity"><div class="quantity buttons_added"> <span class="numeric-stepper">
+                        <button type="submit" name="ns_button_1" value="1" class="plus">+</button>
+                        <input type="text" name="ns_textbox" size="2" class="input-text qty text" />
+                        <button type="submit" name="ns_button_2" value="-1" class="minus">-</button>
+                        </span> </div></td>
+                    
+                    <!-- Product subtotal -->
+                    <td class="product-subtotal"><span class="amount">$2,950</span></td>
+                    <td class="product-remove"><a title="Remove this item" href="#"><i class="fa fa-trash-o"></i></a></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
+              <div class="cart-coupon">
+                <div class="span5"><span>Coupon:</span>
+                  <input type="text" name="coupon">
+                  <input type="submit" value="Apply Coupon">
+                </div>
+                <div class="pull-right">
+                  <input type="submit" value="Update Cart">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row cart-footer">
+        <div class="span4 ">
+          <h2>Shipping & Tax</h2>
+          <div class="text-box">
+            <form>
+              <ul>
+                <li>
+                  <label>Select Country *</label>
+                  <select>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia, Plurinational State of</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Réunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthélemy</option>
+                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin (French part)</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten (Dutch part)</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                  </select>
+                </li>
+                <li>
+                  <label>Select Country *</label>
+                  <select>
+                    <option value="state">State</option>
+                  </select>
+                </li>
+                <li>
+                  <label>Zip/Postal code *</label>
+                  <input type="text" name="zipcode">
+                </li>
+                <li>
+                  <input type="submit" value="Get a Quote">
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="span4 ">
+          <h2>Discount Codes</h2>
+          <div class="text-box">
+            <ul>
+              <li>
+                <label>Enter your coupon code if you have one.</label>
+                <input type="text" name="ccode">
+              </li>
+              <li>
+                <input type="submit" value="Get a Quote">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span4 ">
+          <h2>Total</h2>
+          <div class="text-box">
+            <ul>
+              <li>Sub total <span class="pull-right total">$10000.00</span></li>
+              <li>Grand Total <span class="pull-right  gtotal">$10000.00</span></li>
+              <li>
+                <input type="submit" value="Proceed to Checkout ">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Content End ================================= --> 
+  
+  <!-- ============================ Brand Logo Start  ================================= -->
+  <div class="footer-logo">
+    <div class="container">
+      <div class="row">
+        <div class="span12"><img src="images/footer-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Brand Logo End  ================================= --> 
+  
+  <!-- ============================ Footer Strart  ================================= -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <h3>Accesiories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Archery</a></li>
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Bodybuilding</a></li>
+            <li><a href="#">Bowling</a></li>
+            <li><a href="#">Boxing</a></li>
+            <li><a href="#">Gymnastics</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h3>Our Offers</h3>
+          <ul class="footer-links">
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Top sellers</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Orders History</a></li>
+          </ul>
+        </div>
+        <div class="span3 twitter">
+          <h3>Latest Tweets</h3>
+          <p>Lucky enough to have The Internet in the office @ billygatesom     		http://t.co/ZKQXRDx8aM
+            about an hour ago</p>
+          <p> @twsjonathan We've got a dev on it now. Thanks again minim :) <br>
+            ^ CA<br>
+            about 4 hours ago </p>
+        </div>
+        <div class="span3">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Lorem LTD<br>
+              United Kingdom<br>
+              Oxford Street 48/188<br>
+              Working Days: Mon. - Sun.<br>
+              Working Hours: 9.00AM - 8.00PM</p>
+          </div>
+          <h3>Join Now</h3>
+          <ul class="footer-social">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter-square"></i></li>
+            <li><i class="fa fa-google-plus-square"></i></li>
+            <li><i class="fa fa-pinterest-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-2">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h3>Latest Blog</h3>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog1.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog2.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog3.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="span4"> <img src="images/footer-mag.jpg" alt=""> </div>
+        <div class="span3">
+          <div class="footer-form">
+            <h3>Contact Us</h3>
+            <p>Cras ac leo accumsan, aliquam odio eu, pellentesque enim</p>
+            <ul>
+              <li>
+                <label>Name</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Email</label>
+                <input name="" type="email">
+              </li>
+              <li>
+                <label>Website</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Comment</label>
+                <textarea name="" rows="4"></textarea>
+              </li>
+              <li>
+                <input type="button" value="Submit" name="Submit">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ============================ Footer End  ================================= --> 
+  
+  <!-- ============================ Copyright Start  ================================= -->
+  <div class="footer-copyrights">
+    <div class="container">
+      <div class="row">
+        <div class="span6">&copy; 2014. Template. All Right Reserved. </div>
+        <div class="span6"><img src="images/cart-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Copyright End  ================================= --> 
+  
+</div>
+<!-- Main Wrapper End here --> 
+
+<!--Js Files Starts Here --> 
+<script type="text/javascript" src="js/jquery.min.js"></script><!--Jquery --> 
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script><!--bootstrap --> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script><!--easing --> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script><!--easing --> 
+<script type="text/javascript" src="lib/forms/ns.js"></script><!--Form Qty --> 
+<script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script><!-- Left Tab --> 
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Switcher --> 
+<script type="text/javascript" src="lib/forms/form.js"></script><!-- Form --> 
+<script type="text/javascript" src="js/custom.js"></script><!--Custom --> 
+ 
+<script src="js/modernizr.custom.html"></script><!--Js Files End Here -->
+</body>
+</html>

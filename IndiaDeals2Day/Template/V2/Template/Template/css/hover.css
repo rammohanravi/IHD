@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* Autor : Chrunch Press */
+
+
+
+
+/* Scroll Gallery Hover Effects Start */
+.nbs-flexisel-ul li {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+.nbs-flexisel-ul li img {
+	background: none repeat scroll 0 0 rgb(238, 238, 238);
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.readmore-button {
+	background: #ffcc00;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	line-height: 57px;
+}
+.readmore-button:hover {
+	background: #9b0406;
+	color: #FFF;
+}
+.nbs-flexisel-ul li div.caption h4 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	padding: 15px;
+	color: #9b0406;
+}
+.nbs-flexisel-ul li div.caption {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+	display: block;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0px;
+	position: absolute;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 9999;
+}
+.nbs-flexisel-ul li:hover div.caption {
+	height: 100%;
+	opacity: 1;
+	width: 100%;
+}
+.nbs-flexisel-ul li div.caption {
+	bottom: 0px;
+	height: 100%;
+	right: 0px;
+	width: 100%;
+}
+.caption {
+	background-color: rgba(146, 96, 91, 0.5);
+	opacity: 0;
+	transition: all 0.3s ease-in 0.4s;
+}
+.caption h4 {
+	opacity: 0;
+	transform: translateY(-200px);
+	transition: all 0.6s ease-in-out 0s;
+}
+.caption p {
+	opacity: 0;
+	transform: translateY(200px);
+	transition: all 0.4s ease-in-out 0s;
+}
+.caption:hover h4 {
+	opacity: 1;
+	transform: scale(1);
+	transition-delay: 0.2s;
+}
+.caption:hover p {
+	opacity: 1;
+	transform: scale(1);
+	transition-delay: 0.2s;
+	font-size: 14px;
+	color: #FFF;
+	line-height: 24px;
+	padding: 0 15px;
+}
+.hover-links {
+	padding: 0 15px;
+}
+.hover-links a {
+	display: block;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 35px;
+	font-weight: 600;
+}
+.hover-links i {
+	font-size: 20px;
+}
+.imglist .iwrapper img {
+	opacity: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+
+.imglist .iwrapper img {
+	opacity: 1;
+}
+
+}
+
+/* Scroll Gallery Hover Effects End */
+
+
+
+
+
+/* Amazing New Sports Stuff Collection Start */
+
+.iwrapper {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.as-content img {
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+/*
+.ContentWrapperMg:hover img {
+	-webkit-transform: translateY(-20%);
+	-moz-transform: translateY(-20%);
+	-ms-transform: translateY(-20%);
+	-o-transform: translateY(-20%);
+	transform: translateY(-20%);
+}
+
+*/
+
+.as-content .content-as {
+	position: absolute;
+	background: #ffffff;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 73px;
+	display: block;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: perspective(600px) rotateX(90deg);
+	-moz-transform: perspective(600px) rotateX(90deg);
+	-ms-transform: perspective(600px) rotateX(90deg);
+	-o-transform: perspective(600px) rotateX(90deg);
+	transform: perspective(600px) rotateX(90deg);
+	-webkit-transform-origin: center bottom 0;
+	-moz-transform-origin: center bottom 0;
+	-ms-transform-origin: center bottom 0;
+	-o-transform-origin: center bottom 0;
+	transform-origin: center bottom 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.as-content:hover .content-as {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform: perspective(600px) rotateY(0deg);
+	-ms-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
+.as-content .content-as .content {
+	position: absolute;
+	width: 100%;
+}
+.as-content .content-as .content .pro-area, .as-content .content-as .content .rating-area, .bs-content .content .pro-area, .bs-hover .bs-content .content .rating-area {
+	background: #9b0406;
+	display: block;
+	padding: 8px;
+	color: #FFF
+}
+.as-content .content-as .content .pro-area .pro-name, .as-content .content-as .content .pro-area .pro-price, .bs-content .content .pro-area .pro-price, .bs-hover .bs-content .content .pro-area .pro-name {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'museo';
+}
+.as-content .content-as .content .pro-area .pro-price, .as-content .content-as .content .rating-area .pro-cart, .bs-hover .bs-content .content .pro-area .pro-price  {
+	float: right;
+}
+.as-content .content-as .content .rating-area, .bs-hover .bs-content .content .rating-area {
+	background: #000;
+}
+.as-content .content-as .content .rating-area .pro-cart a {
+	font-size: 20px;
+	color: #FFF
+}
+
+/* Amazing New Sports Stuff Collection End */
+
+
+
+/* Best Sellers start */
+
+
+
+
+
+/* simple plus sign start */
+
+.iwrapper .plusi {
+	background: url(../images/plus.png) no-repeat scroll center center / 60px 60px #222222;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	z-index: 9999;
+}
+.iwrapper:hover .plusi {
+	opacity: .6;
+	visibility: visible;
+}
+
+
+.latest-product-slider img {opacity:1;}
+
+.latest-product-slider .iwrapper:hover img {
+
+opacity:.5;
+transition: all 0.3s ease 0s;
+}
+
+
+
+.iwrapper .plusa {
+	background: url(../images/large.png) no-repeat scroll center center / 32px 32px;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	z-index: 9999;
+}
+.iwrapper:hover .plusa{
+	opacity: .9;
+	visibility: visible;
+}
+
+
+
+/* simple plus sign end */
+
+
+/* Gallery + Blog Image Hover */
+
+.iwrapper .gb-overlay:after {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+	height: 100%;
+	content: "";
+	display: block;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: -100%;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+	width: 100%;
+}
+.iwrapper:hover .gb-overlay:after {
+	top: 50%;
+	opacity: 1;
+}
+.iwrapper .gb-overlay:before {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+	bottom: -100%;
+	height: 100%;
+	content: "";
+	display: block;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+	width: 100%;
+}
+.iwrapper:hover .gb-overlay:before {
+	bottom: 50%;
+	opacity: 1;
+}
+.iwrapper .gb-overlay {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+	height: 100%;
+	display: block;
+	left: 50%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 0;
+}
+.iwrapper:hover .gb-overlay {
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+.iwrapper .StyleH {
+	visibility: hidden;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	margin-top: -20px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.iwrapper:hover .picon {
+	opacity: 1;
+	visibility: visible;
+}
+.iwrapper .picon {
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.iwrapper:hover .picon {
+	margin-top: -20px;
+	opacity: 1;
+	top: 50%;
+	visibility: visible;
+}
+
+.iconbg, .iconbg2 {
+	background: none;
+	border: medium none;
+	display: inline-block !important;
+	float: none !important;
+	font-size: 14px;
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 2px;
+	text-align: center;
+	width: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+	-ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+	-o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+}
+
+.iconbg2 {background:#FFF;}
+
+.iconbg2 > a {color:#9b0406; font-size:15px;}
+.iconbg2 > a:hover {color:#ffcc00}
+
+.iconbg > a {
+	color: #fff;
+	display: block;
+	font-weight: normal;
+	font-size:50px;
+}
+
+/* Gallery + Blog Image Hover */
+
+.testi-slider .caption, .team-box .caption {opacity:1; background:none;}
+.testi-slider .caption p { opacity:1; transform:none;}
+.team .bs-hover .bs-content { background:none}
+.team .bs-hover:hover img {transform:none}
+
+.team .bs-hover:hover .team-box
+
+ {
+	-webkit-transform: translateY(-15%);
+	-moz-transform: translateY(-15%);
+	-ms-transform: translateY(-15%);
+	-o-transform: translateY(-15%);
+	transform: translateY(-15%);
+}
+
+.team .bs-hover .bs-content .content .rating-area {background:none; }
+.team .bs-hover .bs-content .content {top:90%; border:#ffcc00 solid 1px;}
+.team .bs-hover .bs-content .content a  { width:30%; text-align:center; padding:10px; font-size:20px;}

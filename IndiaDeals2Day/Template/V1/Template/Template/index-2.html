@@ -1,0 +1,1266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Template</title>
+
+<!--Site Mata Tags start Here -->
+<meta name="description" content="Template">
+<meta name="keywords" content="Template">
+<meta name="author" content="Crunch Press">
+<!-- FAVICON -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Style Sheets Start Here -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- Style Sheet -->
+
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Custom Responsive -->
+<link href="css/megamenu.css" rel="stylesheet">
+<!-- Mega Menu -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+<!-- bx-slider -->
+<link href="css/color.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="css/hover.css" rel="stylesheet" type="text/css">
+<!-- Hover -->
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Fontawsome -->
+<link href="lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Fontawsome -->
+
+<!-- Color Css Files Start -->
+<link rel="stylesheet" type="text/css" href="css/color-red.css" title="styles-red" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-blue.css" title="styles-blue" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-orange.css" title="styles-orange" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-aqua.css" title="styles-aqua" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-green.css" title="styles-green" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-purple.css" title="styles-purple" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-light.css" title="styles-light" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/boxed.css" title="styles-boxed" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/wide.css" title="styles-wide" media="screen" />
+<!-- Color Css Files End -->
+
+</head>
+<body>
+<div class="slide-out-div"> <a class="handle" href="#">Content</a>
+  <h3>Style Switcher</h3>
+  <div class="colors-sw">
+    <ul>
+      <li><a href="#" data-rel="styles-red" class="styleswitch"><img src="images/color/red.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-blue" class="styleswitch"><img src="images/color/blue.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-orange" class="styleswitch"><img src="images/color/orange.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-aqua" class="styleswitch"><img src="images/color/aqua.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-green" class="styleswitch"><img src="images/color/green.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-purple" class="styleswitch"><img src="images/color/purple.png" alt=""></a></li>
+      <li><a href="#" data-rel="styles-light" class="styleswitch">Light</a></li>
+      <li><a href="#" data-rel="styles-boxed" class="styleswitch">Boxed</a></li>
+      <li><a href="#" data-rel="styles-wide" class="styleswitch">Wide</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Main Wrapper Starts here -->
+<div class="wrapper home boxed"> 
+  
+  <!-- topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="top-black">
+        <div class="row">
+          <div class="span6">
+            <div id="loginContainer"> <span class="welcome">Welcome visitor you can <a href="#" id="loginButton"><span>Login</span></a> or <a href="register.html">create an account!</a></span>
+              <div style="clear:both"></div>
+              <div id="loginBox">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <fieldset>
+                      <label for="email">Email Address</label>
+                      <input type="text" name="email"/>
+                    </fieldset>
+                    <fieldset>
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </fieldset>
+                    <input type="submit" id="login" value="Login" />
+                    <input type="submit" id="register" value="Register" />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <!-- Login Ends Here --> 
+            
+          </div>
+          <div class="span6">
+            <div class="topbar-dropdowns">
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Currency <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">US Dollar</a></li>
+                  <li><a href="#">Euro</a></li>
+                </ul>
+              </div>
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Lang <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Dutch</a></li>
+                </ul>
+              </div>
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> My Account <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#login">Login</a></li>
+                  <li><a href="#register">Register</a></li>
+                </ul>
+              </div>
+              <div class="btn-group top-search">
+                <div id="searchContainer"> <span class="welcome"><a href="#" id="searchButton"><i class="fa fa-search"></i></a></span>
+                  <div style="clear:both"></div>
+                  <div id="searchBox">
+                    <form id="searchForm">
+                      Search Here <small>*</small>
+                      <fieldset id="search">
+                        <fieldset>
+                          <input type="text" name="email"/>
+                        </fieldset>
+                        <input type="submit" name="Search" value="Search">
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="top-social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- topbar end --> 
+  
+  <!-- Header Start -->
+  <div class="header">
+    <div class="container">
+      <div class="row"> 
+        <!-- Logo -->
+        <div class="span3">
+          <div class="logo"><a href="index-2.html" title="Avetor Sports"> <img src="images/logo.png" alt="Avetor Sports"> </a></div>
+        </div>
+        <!-- Logo end -->
+        <div class="span9">
+          <div class="nav-holder">
+            <nav id="nav">
+              <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                  <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <div class="nav-collapse collapse">
+                    <div class="menu">
+                      <ul class="menu" id="mm">
+                        <li class="activemm"><a href="index-2.html">Home</a></li>
+                        <li><a href="pro-men.html" class="arrow">Men</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic-men.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Clothings</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li><a href="pro-women.html" class="arrow">Women</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Clothings</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li><a href="pro-sports.html" class="arrow">Sports</a> 
+                          
+                          <!-- Mega Menu / Start -->
+                          <div class="mega-menu">
+                            <div class="col-1"> <img src="images/menu-pic-sports.jpg" alt=""> </div>
+                            <div class="col-1">
+                              <h4>Shoes</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Dreses</a></li>
+                                <li><a href="pro-men.html">T-Shirts</a></li>
+                                <li><a href="pro-men.html">Jackets</a></li>
+                                <li><a href="pro-men.html">Jeans</a></li>
+                              </ol>
+                            </div>
+                            <div class="col-1">
+                              <h4>New Deals</h4>
+                              <ol>
+                                <li><a href="pro-men.html">Boots</a></li>
+                                <li><a href="pro-men.html">Heels</a></li>
+                                <li><a href="pro-men.html">Sandals</a></li>
+                                <li><a href="pro-men.html">Thongs</a></li>
+                              </ol>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="manu-bottom"><a href="#">Custom Block:</a> <a href="#"> Exclusive </a> <a href="#">Offer </a> <a href="#">Sale</a></div>
+                          </div>
+                          <!-- Mega Menu / End --> 
+                        </li>
+                        <li><a href="#" class="arrow">Pages</a> 
+                          <!-- Drop-Down / Start -->
+                          <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faqs.html">FAQ's</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="password.html">Password</a></li>
+                            <li><a href="#">Gallery</a>
+                              <ul>
+                                <li><a href="gallery-col-2.html">Gallery Two Col</a></li>
+                                <li><a href="gallery-col-3.html">Gallery Three Col</a></li>
+                                <li><a href="gallery-col-4.html">Gallery Four Col</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Shop</a>
+                              <ul>
+                                <li><a href="products.html">Products Grid View</a></li>
+                                <li><a href="products-list.html">Products List View</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">Account</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="location-locator.html">Location</a></li>
+                          </ul>
+                          <!-- Drop-Down / End --> 
+                        </li>
+                        <li><a href="blog.html" class="arrow">Blog</a>
+                          <ul>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contactus.html">Contact Us</a>
+                        <li class="nav-last"><a href="#"><i class="fa fa-star-o"></i> <span class="hrating">30</span></a></li>
+                        <li class="nav-last2"><a href="#"><i class="fa fa-shopping-cart"></i> <span class="hcart">0</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--/.nav-collapse --> 
+                </div>
+                <!-- /.navbar-inner --> 
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End --> 
+  
+  <!-- Slider Start -->
+  <div class="slider">
+    <ul class="main-slider">
+      <li>
+        <div class="container">
+          <div class="slider-box top-indent right-top-fold odd"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span> <img src="images/main-slider.jpg" alt=""></span></li>
+      <li>
+        <div class="container">
+          <div class="slider-box top-indent right-top-fold odd"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li class="active"><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-star"></i></a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span><img src="images/main-slider1.jpg" alt=""></span></li>
+      <li>
+        <div class="container">
+          <div class="slider-box top-indent right-top-fold odd"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-star"></i></a></li>
+              <li class="active"><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span><img src="images/main-slider2.jpg" alt=""></span></li>
+      <li>
+        <div class="container">
+          <div class="slider-box top-indent right-top-fold odd"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-star"></i></a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li class="active"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span><img src="images/main-slider3.jpg" alt=""></span></li>
+      <li>
+        <div class="container">
+          <div class="slider-box top-indent right-top-fold odd"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-star"></i></a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span><img src="images/main-slider4.jpg" alt=""></span></li>
+      <li>
+        <div class="container">
+          <div class="slider-box right-top-fold"> <strong class="title">Avetor Sports 2014 Collection</strong>
+            <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <ul>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
+              <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <span><img src="images/main-slider5.jpg" alt=""></span></li>
+    </ul>
+    <div class="slider-pager">
+      <div id="bx-pager"> <a data-slide-index="0" href="#">Avetor Collections<span>Now af $ 123,45</span></a> <a data-slide-index="1" href="#">Basketball<span>Limited Edition</span></a> <a data-slide-index="2" href="#">Cycling<span>20% off Now</span></a> <a data-slide-index="3" href="#">Golf<span>All Colors avaiable</span></a> <a data-slide-index="4" href="#">Boxing<span>Free delivery</span></a> <a data-slide-index="5" href="#">Snow Board<span>Free delivery</span></a> </div>
+    </div>
+  </div>
+  <!-- Slider End --> 
+  
+  <!-- ============================ Main Title Start ================================= -->
+  <div class="main-title cp_load fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> <strong class="title">NEW WINTER ARRIVALS</strong>
+          <h2>SAVE OFF 25% + FREE SHIPPING <span>ALL</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Title End ================================= --> 
+  
+  <!-- ============================ Latest Products with side banner Start ================================= -->
+  <div class="latest-products">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row"> 
+          <!-- latest product span start  -->
+          <div class="span9">
+            <div class="home-latest panel panel-primary">
+              <div class="title-bar panel-heading">
+                <div class="title">Get the Latest</div>
+                <div class="filter-links pull-right"><a class="active" href="#tab1" data-toggle="tab">All</a> / <a href="#tab2" data-toggle="tab"> His</a> / <a href="#tab3" data-toggle="tab"> Her</a> / <a href="#tab4" data-toggle="tab"> Kids</a></div>
+              </div>
+              <div class="lastest-content">
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab1"> 
+                      <!--Prodcut slider 1 -->
+                      
+                      <ul class="latest-product-slider">
+                        <li> <strong>Curabitur eu arcu</strong>
+                          <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/pro1.jpg" alt="">
+                            <div class="plusa"></div>
+                            </a> </div>
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong>
+                          <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/pro2.jpg" alt="">
+                            <div class="plusa"></div>
+                            </a> </div>
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong>
+                          <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/pro3.jpg" alt="">
+                            <div class="plusa"></div>
+                            </a> </div>
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong>
+                          <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/pro4.jpg" alt="">
+                            <div class="plusa"></div>
+                            </a> </div>
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane" id="tab2"> 
+                      <!--Prodcut slider 2 -->
+                      
+                      <ul class="latest-product-slider">
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro4.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro3.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro2.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro1.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane" id="tab3"> 
+                      <!--Prodcut slider 3 -->
+                      
+                      <ul class="latest-product-slider">
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro3.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro2.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro1.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro4.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane" id="tab4"> 
+                      <!--Prodcut slider 4 -->
+                      
+                      <ul class="latest-product-slider">
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro2.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro1.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro4.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                        <li> <strong>Curabitur eu arcu</strong> <img src="images/pro3.jpg" alt="">
+                          <div class="pro-bottom"> <span class="price">Price: $ 45</span><span class="pcart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  Filder content   -->
+            <div class="row-fluid">
+              <div class="span8">
+                <div class="filter-form">
+                  <div class="vtext">
+                    <p class="vertical-text"><img src="images/vtext.png" alt=""></p>
+                  </div>
+                  <div class="form">
+                    <div class="row-fluid">
+                      <div class="span5">
+                        <form>
+                          <ul>
+                            <li class="full">
+                              <select name="">
+                                <option value="Style 1">Style 1</option>
+                                <option value="Style 2">Style 2</option>
+                              </select>
+                            </li>
+                            <li class="half">
+                              <select name="">
+                                <option value="Style 1">Small</option>
+                                <option value="Style 2">Medium</option>
+                                <option value="Style 2">Large</option>
+                                <option value="Style 2">Extra Large</option>
+                              </select>
+                            </li>
+                            <li class="half pull-right">
+                              <select name="">
+                                <option value="Style 1">Red</option>
+                                <option value="Style 2">Yellow</option>
+                                <option value="Style 2">Pink</option>
+                                <option value="Style 2">White</option>
+                              </select>
+                            </li>
+                            <li class="full text-center">
+                              <input type="submit" name="Find" value="Find Now">
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                      <div class="span5">
+                        <form>
+                          <ul>
+                            <li class="full styled-select">
+                              <select name="">
+                                <option value="Style 1">Style 1</option>
+                                <option value="Style 2">Style 2</option>
+                              </select>
+                            </li>
+                            <li class="half styled-select">
+                              <select name="">
+                                <option value="Style 1">Small</option>
+                                <option value="Style 2">Medium</option>
+                                <option value="Style 2">Large</option>
+                                <option value="Style 2">Extra Large</option>
+                              </select>
+                            </li>
+                            <li class="half pull-right">
+                              <select name="">
+                                <option value="Style 1">Red</option>
+                                <option value="Style 2">Yellow</option>
+                                <option value="Style 2">Pink</option>
+                                <option value="Style 2">White</option>
+                              </select>
+                            </li>
+                            <li class="full text-center">
+                              <input type="submit" name="Find" value="Find Now">
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="home-banner"><img src="images/banner1.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <!-- latest product span End  --> 
+          
+          <!-- latest banner span start  -->
+          <div class="span3">
+            <div class="side-banner">
+              <ul class="banner-slider">
+                <li><img src="images/sbanner1.jpg" alt="" /></li>
+                <li><img src="images/sbanner1.jpg" alt="" /></li>
+                <li><img src="images/sbanner1.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+          <!-- latest banner span End  --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Latest Products with side banner End ================================= --> 
+  
+  <!-- ============================ Famous Events Start ================================= -->
+  <div class="home-events">
+    <div class="home-events-title"> <strong>Feamous Events</strong>
+      <h2>Checkout  our latest events</h2>
+    </div>
+    <div class="event-gallery">
+      <ul id="flexisel">
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-1.jpg" alt="" /></li>
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-2.jpg" alt="" /></li>
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-3.jpg" alt=""  /></li>
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-4.jpg" alt="" /></li>
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-5.jpg" alt="" /></li>
+        <li>
+          <div class="caption">
+            <h4>Donec loremtique amae aletor</h4>
+            <p>Curabitur eu ipsum arcu. Aenean vel sapien aliquam, interdum metus ac, fermentum magna. Quisque pharetra porta magna nec porta. ...</p>
+            <div class="hover-links"><a href="#"><i class="fa fa-user"></i> Andy Clark</a> <a href="#"><i class="fa fa-eye"></i> 1267 Views</a> <a href="#"><i class="fa fa-map-marker"></i> Golden Planet Park. Los Angeles</a> </div>
+            <a href="#" class="readmore-button">Read More</a> </div>
+          <img src="images/event-3.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- ============================ Famous Events End ================================= --> 
+  
+  <!-- ============================ Amazing New Sports Stuff start  ================================= -->
+  <div class="new-stuff-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <div class="stuff-title">
+            <h2>Amazing New Sports Stuff <span>Collection</span></h2>
+            <p> Lorem psum dolor aet cosctetur aipiscing elit nunc  aiquet varius curabitur lorem masa ultricies nec convallis sem mauris facilisis, eros ut iaculis suscipit sollicitudin dignissim nunc urna eu.orem psum dolor aet cosctetur aipiscing elit nunc  . </p>
+            <button>View Collection</button>
+          </div>
+        </div>
+        <div class="span7"> 
+          
+          <!--Scroll Products start -->
+          
+          <div id="content_1" class="scontent">
+            <div class="amazing-stuff">
+              <ul class="mosaicflow imglist" id="imglist10">
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-01.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-02.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-03.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-04.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-01.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-02.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-03.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-04.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-01.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-02.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-03.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li  class="mosaicflow__item">
+                  <div class="iwrapper as-content"> <a href="#"><img class="img-responsive" src="images/astuff-04.jpg" alt=""></a>
+                    <div class="content-as">
+                      <div class="content">
+                        <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                        <div class="rating-area"><span class="pro-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> 145 Reviews </span> <span class="pro-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!--Scroll Products End --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Amazing New Sports Stuff End  ================================= --> 
+  
+  <!-- ============================ testimonials start  ================================= -->
+  <div class="home-testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="testimonials-left"> <i class="fa fa-quote-left"></i>
+            <h2>Testimonials</h2>
+            <strong> Happy Clients say about us</strong>
+            <p> Our members have been talking...<br>
+              Come check out what our collectors are saying about us!</p>
+            <a class="view-more" href="#"> View More <i class="fa fa-angle-double-right"></i></a> </div>
+        </div>
+        <div class="span8">
+          <div class="testimonials">
+            <ul class="testimonial-slider">
+              <li>
+                <ul class="testi-text">
+                  <li class="testi-img"><img src="images/testi-img.jpg" alt=""></li>
+                  <li class="testi-details">
+                    <p>The superior man understands what is right; the inferior man understands what will sell.</p>
+                    <span>-Confucius, Chinese teacher, editor, politician, and philosopher</span> </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="testi-text">
+                  <li class="testi-img"><img src="images/testi-img2.jpg" alt=""></li>
+                  <li class="testi-details">
+                    <p>The superior man understands what is right; the inferior man understands what will sell.</p>
+                    <span>-Confucius, Chinese teacher, editor, politician, and philosopher</span> </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="testi-text">
+                  <li class="testi-img"><img src="images/testi-img3.jpg" alt=""></li>
+                  <li class="testi-details">
+                    <p>The superior man understands what is right; the inferior man understands what will sell.</p>
+                    <span>-Confucius, Chinese teacher, editor, politician, and philosopher</span> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ testimonials End  ================================= --> 
+  
+  <!-- ============================ Sale Banner start  ================================= -->
+  <div class="sale-banner">
+    <div class="container">
+      <div class="row">
+        <div class="span2">
+          <div class="drbox"><i class="fa fa-dropbox"></i></div>
+        </div>
+        <div class="span7"><strong>Responsive Theme</strong> <span>Easy Customizable, Retina, Clean Design, Cross Browser Compatible, Unlimited Colors</span> </div>
+        <div class="span3">
+          <div class="purchase"><a href="#">Add It</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Sale Banner  End  ================================= --> 
+  
+  <!-- ============================ Best Seller Start  ================================= -->
+  <div class="best-seller">
+    <div class="container">
+      <div class="row">
+        <div class="span9">
+          <h2>Best Seller</h2>
+          <div class="product-scroller">
+            <ul class="bestseller">
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-01.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-02.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-03.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-01.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-02.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-03.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-01.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-02.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="iwrapper bs-hover"> <img class="img-responsive" src="images/proimg-03.jpg" alt="">
+                  <div class="bs-content">
+                    <div class="content">
+                      <div class="pro-area"><span class="pro-name">Tennis Ball</span><span class="pro-price">33 $</span> </div>
+                      <div class="rating-area"> <a href="#"><i class="fa fa-eye"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span3">
+          <ul class="home-sidebanners">
+            <li> <img src="images/side-banner2.jpg" alt=""> </li>
+            <li> <img src="images/side-banner3.jpg" alt=""> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Best  Seller  End  ================================= --> 
+  
+  <!-- ============================ Most Hot Deals Start  ================================= -->
+  <div class="hot-deal">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span5">
+          <div class="hotdea-slider-bg">
+            <ul class="hotdeals-slider">
+              <li><img src="images/zack.png" alt=""></li>
+              <li><img src="images/zack2.png" alt=""></li>
+              <li><img src="images/zack3.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="span7">
+          <div class="deals">
+            <h2>Most Hot Deals</h2>
+            <div class="deal-product">
+              <div class="pro-img pull-left">
+                <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/deal-img.jpg" alt="">
+                  <div class="plusi"></div>
+                  </a> </div>
+              </div>
+              <div class="product-options">
+                <h3>Men’s Reckon Bagpack</h3>
+                <ul class="hot-deal-options">
+                  <li class="price">$82.00</li>
+                  <li class="rating-stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"> </i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></li>
+                  <li class="reviews">24 reviews</li>
+                </ul>
+                <ul class="hotdeal-options">
+                  <li class="colors"> <strong>Color:</strong> <a href="#"><i><img src="images/color1.jpg" alt=""></i></a> <a href="#"><i><img src="images/color2.jpg" alt=""></i></a> <a href="#"><i><img src="images/color3.jpg" alt=""></i></a> </li>
+                  <li class="size"><strong>Size:</strong> <a href="#"><i>S</i></a> <a href="#"><i>M</i></a> <a href="#"><i>L</i></a></li>
+                  <li class="qty"> <strong>Quantity:</strong>
+                    <form>
+                      <select name="">
+                        <option value="Style 1">1</option>
+                        <option value="Style 2">2</option>
+                        <option value="Style 2">3</option>
+                        <option value="Style 2">4</option>
+                        <option value="Style 2">5</option>
+                        <option value="Style 2">6</option>
+                        <option value="Style 2">7</option>
+                        <option value="Style 2">8</option>
+                        <option value="Style 2">9</option>
+                        <option value="Style 2">10</option>
+                      </select>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+              <div class="pull-right"> <span class="like"><a href="#"><i class="fa fa-star-o"></i></a></span> <span class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></span> </div>
+            </div>
+            <div class="pro-details">
+              <p> Men-specific daypacks provides 29-liter volume to efficiently hold all your gear and keep you organized.</p>
+              <p> Available in a variety of colors, this nylon pack is lightweight and durable for everyday use. Pack features one large main zip pocket with a laptop sleeve (fits most 15" laptops) with hydration port exit to keep your thirst in check on your journey. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Most Hot Deals Start  ================================= --> 
+  
+  <!-- ============================ Brand Logo Start  ================================= -->
+  <div class="brand-logo">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h2>Our Brands</h2>
+          <ul class="partner-logo">
+            <li><img src="images/logos/plogo1.png" alt=""></li>
+            <li><img src="images/logos/plogo2.png" alt=""></li>
+            <li><img src="images/logos/plogo3.png" alt=""></li>
+            <li><img src="images/logos/plogo4.png" alt=""></li>
+            <li><img src="images/logos/plogo5.png" alt=""></li>
+            <li><img src="images/logos/plogo6.png" alt=""></li>
+            <li><img src="images/logos/plogo7.png" alt=""></li>
+            <li><img src="images/logos/plogo8.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Brand Logo End  ================================= --> 
+  
+  <!-- ============================ Brand Logo Start  ================================= -->
+  <div class="footer-logo">
+    <div class="container">
+      <div class="row">
+        <div class="span12"><img src="images/footer-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Brand Logo End  ================================= --> 
+  
+  <!-- ============================ Footer Strart  ================================= -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <h3>Accesiories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Archery</a></li>
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Bodybuilding</a></li>
+            <li><a href="#">Bowling</a></li>
+            <li><a href="#">Boxing</a></li>
+            <li><a href="#">Gymnastics</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h3>Our Offers</h3>
+          <ul class="footer-links">
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Top sellers</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Orders History</a></li>
+          </ul>
+        </div>
+        <div class="span3 twitter">
+          <h3>Latest Tweets</h3>
+          <p>Lucky enough to have The Internet in the office @ billygatesom     		http://t.co/ZKQXRDx8aM
+            about an hour ago</p>
+          <p> @twsjonathan We've got a dev on it now. Thanks again minim :) <br>
+            ^ CA<br>
+            about 4 hours ago </p>
+        </div>
+        <div class="span3">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Lorem LTD<br>
+              United Kingdom<br>
+              Oxford Street 48/188<br>
+              Working Days: Mon. - Sun.<br>
+              Working Hours: 9.00AM - 8.00PM</p>
+          </div>
+          <h3>Join Now</h3>
+          <ul class="footer-social">
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-2">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h3>Latest Blog</h3>
+          <ul class="footer-blog">
+            <li class="image">
+              <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/fblog1.jpg" alt="">
+                <div class="plusi"></div>
+                </a> </div>
+            </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image">
+              <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/fblog2.jpg" alt="">
+                <div class="plusi"></div>
+                </a> </div>
+            </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image">
+              <div class="iwrapper"> <a href="#"> <img class="img-responsive" src="images/fblog3.jpg" alt="">
+                <div class="plusi"></div>
+                </a> </div>
+            </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="span4"> <img src="images/footer-mag.jpg" alt=""> </div>
+        <div class="span3">
+          <div class="footer-form">
+            <h3>Contact Us</h3>
+            <p>Cras ac leo accumsan, aliquam odio eu, pellentesque enim</p>
+            <fieldset id="contact_form">
+              <ul>
+                <li>
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+                </li>
+                <li>
+                  <label>Email</label>
+                  <input type="text" name="email" id="email" placeholder="Enter Your Email" />
+                </li>
+                <li>
+                  <label>Website</label>
+                  <input type="text" name="website" id="website" placeholder="Website" />
+                </li>
+                <li>
+                  <label>Comment</label>
+                  <textarea name="message" id="message" placeholder="Enter Your Name"></textarea>
+                </li>
+                <li>
+                  <button class="submit_btn" id="submit_btn">Submit</button>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ============================ Footer End  ================================= --> 
+  
+  <!-- ============================ Copyright Start  ================================= -->
+  <div class="footer-copyrights">
+    <div class="container">
+      <div class="row">
+        <div class="span6">&copy; 2014. Template. All Right Reserved. </div>
+        <div class="span6"><img src="images/cart-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Copyright End  ================================= --> 
+  
+</div>
+<!-- Main Wrapper End here --> 
+
+<!--Js Files Starts Here --> 
+<script type="text/javascript" src="js/jquery.min.js"></script><!--Jquery --> 
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script><!--bootstrap --> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script><!--easing --> 
+<script type="text/javascript" src="js/moderniz.js"></script><!--bootstrap --> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script><!--bx slider --> 
+<script src="js/jquery.mosaicflow.js"></script> <!-- vertical scroll gallery --> 
+<script type="text/javascript" src="lib/forms/form.js"></script><!-- Form --> 
+<script type="text/javascript" src="js/jquery.flexisel.js"></script><!-- scroll gallery --> 
+
+<script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script><!-- Left Tab --> 
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Switcher --> 
+<script type="text/javascript" src="js/custom.js"></script><!--Custom -->
+
+<link href="js/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script type="text/javascript" src="js/gray.js"></script><!-- Images Gray Scale --> 
+ 
+
+<!--Js Files End Here -->
+
+</body>
+</html>

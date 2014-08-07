@@ -1,0 +1,275 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Profile.css" />
+</head>
+<body>
+<div class="structure s-profile">
+  <div class="structure s-profile-sidebar">
+    <div class="module m-profile-sidebar-content no-top-border">
+      <div class="inner">
+        <div class="header">
+          <input type="hidden" id="auid" name="auid" value="MSRaghava">
+          <div id="user-avatar">
+            <img src="images/avatar_default.gif" alt="MSRaghava">
+            <form name="form" id="avatar-upload-form" enctype="multipart/form-data" method="post" class="dropzone dz-clickable" action="/profile/MSRaghava/settings/ajax?save_avatar=true">
+              <div class="dz-default dz-message"><span><span class="pencil"><strong class="pencil"></strong><span><span>Edit Avatar</span></span></span></span></div>
+            </form>
+          </div>
+          <h3>MSRaghava</h3>
+        </div>
+        <div class="body">
+          <p><span id="user-description-messages"></span><span id="user-description-text"><span class="hover"><span class="text">
+            Edit your description
+            </span><span class="pencil"><strong class="pencil"></strong><span><span>Edit Description</span></span></span></span></span>
+          </p>
+          <p><span class="key">Location:</span><span id="user-location-messages"></span><span id="user-location-text"><span class="hover"><span class="text">
+            Edit your location
+            </span><span class="pencil"><strong class="pencil"></strong><span><span>Edit Location</span></span></span></span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="module m-profile-sidebar-content">
+      <div class="inner">
+        <div class="body">
+          <p><span class="key">Title:</span><strong class="value">Flint</strong></p>
+          <p><span class="key">Member:</span><strong class="value">1 minute  </strong></p>
+          <p><span class="key">Last active:</span><strong class="value">1 minute  </strong></p>
+          <p><span class="key key-float">Likes:</span><strong class="value">0</strong></p>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="module m-profile-sidebar-content">
+      <div class="inner">
+        <div class="header">
+          <h3>
+            Feedback
+            <span class="small">
+            (0
+            total)
+            </span>
+          </h3>
+        </div>
+        <div class="body">
+          <p><strong class="feedback feedback-positive">0</strong><strong class="feedback feedback-negative">0</strong></p>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="module m-profile-sidebar-content">
+      <div class="inner">
+        <div class="header">
+          <h3>Stats</h3>
+        </div>
+        <div class="body">
+          <p><span class="key">Deals posted:</span><strong class="value">0</strong></p>
+          <p><span class="key">Post views:</span><strong class="value">0</strong></p>
+          <p><span class="key">Comments:</span><strong class="value">0</strong></p>
+          <p><span class="key">Comments/day:</span><strong class="value">0</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="capsule-prompt-user"></div>
+  <div class="structure s-red-title-bar">
+    <div class="module m-red-title-bar">
+      <div class="inner">
+        <div class="body">
+          <h3>MSRaghava</h3>
+          <div class="form">
+            <label for="user_search_top">User Search</label>
+            <div class="input input-text"><input type="text" id="user_search_top" tabindex="210" class="user_search" maxlength="25" autocomplete="off"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="structure s-profile-inner-navigation">
+    <div id="social-connections-sidebar" class="module m-profile-sidebar-content no-top-border">
+      <div class="inner">
+        <div class="header">
+          <h3>Social Connections</h3>
+        </div>
+        <div class="body">
+          <div class="social social-connected social-connected-facebook" style="display: none;">
+            <span class="logo logo-connected logo-connected-facebook"></span>
+            <ul class="inner-navigation-links">
+              <li><a href="javascript:;" class="call-social-disconnect-facebook">
+                Disconnect Facebook
+                </a>
+              </li>
+            </ul>
+            <div class="input input-checkbox"><input type="checkbox" id="post_to_facebook_deals"></div>
+            <label class="small-text" for="post_to_facebook_deals">Publish my deals</label>
+            <div class="clear"></div>
+            <div class="input input-checkbox"><input type="checkbox" id="post_to_facebook_votes"></div>
+            <label class="small-text" for="post_to_facebook_votes">Publish my votes</label>
+            <div class="clear"></div>
+            <div class="input input-checkbox"><input type="checkbox" id="post_to_facebook_comments"></div>
+            <label class="small-text" for="post_to_facebook_comments">Publish my comments
+            </label>
+            <div class="clear"></div>
+          </div>
+          <div class="social social-disconnected social-disconnected-facebook">
+            <span class="logo logo-disconnected logo-disconnected-facebook"></span>
+            <div id="FB_HiddenContainer" style="position:absolute; top:-10000px; width:0px; height:0px;"></div>
+            <ul class="inner-navigation-links">
+              <li>
+                <a href="javascript:;" class="call-modal-facebook-connect">Connect
+                Facebook
+                </a>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="social social-connected social-connected-twitter" style="display: none;">
+            <span class="logo logo-connected logo-connected-twitter"></span>
+            <ul class="inner-navigation-links">
+              <li class="twitter"><a href="javascript:;" class="call-social-disconnect-twitter">Disconnect
+                Twitter
+                </a>
+              </li>
+            </ul>
+            <div class="input input-checkbox"><input type="checkbox" id="post_to_twitter_deals"></div>
+            <label class="small-text" for="post_to_twitter_deals">Publish my deals</label>
+            <div class="clear"></div>
+            <div class="input input-checkbox"><input type="checkbox" id="post_to_twitter_votes"></div>
+            <label class="small-text" for="post_to_twitter_votes">Publish my votes</label>
+            <div class="clear"></div>
+          </div>
+          <div class="social social-disconnected social-disconnected-twitter">
+            <span class="logo logo-disconnected logo-disconnected-twitter"></span>
+            <ul class="inner-navigation-links">
+              <li class="twitter">
+                <a href="javascript:;" class="call-modal-twitter-connect">Connect
+                Twitter
+                </a>
+                <div class="clear"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="module m-settings-sidebar">
+      <div class="inner">
+        <div class="header">
+          <h3>Private Messages</h3>
+          <ul>
+            <li class="current"><a href="http://www.hotukdeals.com/profile/MSRaghava/messages" title="Inbox">Inbox</a></li>
+            <li><a href="http://www.hotukdeals.com/profile/MSRaghava/messages" title="View All">View All</a></li>
+            <li><a href="http://www.hotukdeals.com/profile/MSRaghava/messages/compose-mail" title="Send New PM">Send New PM</a></li>
+          </ul>
+        </div>
+        <div class="body">
+          <p>You have no messages in your inbox.</p>
+        </div>
+      </div>
+    </div>
+    <div class="module m-settings-sidebar">
+      <div class="inner">
+        <div class="header">
+          <h3>Recent Activity</h3>
+          <ul>
+            <li class="your-tab-button current"><a href="http://www.hotukdeals.com/profile/MSRaghava" title="Your">Your</a></li>
+          </ul>
+        </div>
+        <div class="body">
+          <div class="your-tab">
+            <p>There are no results</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="structure s-profile-container">
+    <div class="structure s-profile-deals">
+      <div class="module m-green-header">
+        <div class="inner">
+          <div class="header">
+            <h3 class="green"><span class="space">Activity 
+              (0)
+              </span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="module m-profile">
+        <div class="inner">
+          <div class="body">
+            <p>You currently have no <strong class="lower-case">Activity</strong>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="structure s-profile-deals">
+      <div class="module m-green-header">
+        <div class="inner">
+          <div class="header">
+            <h3 class="green"><span class="space">
+              Subscribed Threads (
+              <span id="st_count">0</span>
+              )
+              </span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div id="sub-error-message"></div>
+      <div class="module m-profile">
+        <div class="inner">
+          <div class="body">
+            <p>
+              You are not subscribed to any threads.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="structure s-profile-deals">
+      <div class="module m-green-header">
+        <div class="inner">
+          <div class="header">
+            <h3 class="green" style="padding-left:10px;">
+              Saved Deals (
+              <span id="dt_count">0</span>
+              )
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div id="saved-thread-error-message"></div>
+      <div class="module m-profile">
+        <div class="inner">
+          <div class="body">
+            <p>You do not have any saved deals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="structure s-profile-following">
+      <div class="module m-green-header">
+        <div class="inner">
+          <div class="header">
+            <h3 class="green"><span class="space">Following Users</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="module m-profile">
+        <div class="inner">
+          <div class="body">
+            <p>
+              You are not following any users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

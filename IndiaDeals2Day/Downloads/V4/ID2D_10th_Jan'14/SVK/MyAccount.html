@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="Shortcut Icon" href="images/Logo-icon.jpg"/>
+<link rel="stylesheet" type="text/css" href="stats.css" />
+<title id="pageTitle">India Deals Today: The Best Deals Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="MyAccount.css" />
+<link rel="stylesheet" href="styles/ImageSliderStyle.css" type="text/css" media="screen" />
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="iecss.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<style type='text/css'>
+.content {
+   clear: both;
+   border: #cfcfcf 1px solid;
+   background-color: #FFF;
+   width: 879px;
+   height: 595px;
+}
+.ulnofloat {
+   list-style-type: none;
+   padding-left: 9px;
+   margin: 0px;
+}
+.ullifloat {
+   float : left;
+   padding-left: opx;
+   border-right:  #cfcfcf 1px solid;
+   background-color: #cfcfcf;
+   margin-right: 0px;
+   text-transform: uppercase;
+   font-style:calibri;
+   font-size:12px;
+   padding:0px 5px;
+}
+.ula {
+   position: relative;
+   text-decoration: none;
+   display: block;
+   padding: 5px 13px;
+   cursor: pointer;
+   font: bold 11px arial, sans-serif;
+   color: #c00000;
+}
+#tabco4{
+   position: relative;
+   left : 235px;
+   width: 880px;
+   background-color: #6699cc;
+   border-right: #6699cc 2px solid;
+}
+#space{
+padding-top:4px;
+}
+#tabco4 ul a:hover {
+   color: #0062e6;
+}
+</style><script type='text/javascript'>
+window.onload = function(){
+init()
+}
+var containercolor="#6699cc";
+
+function init() {
+
+var border="#cfcfcf 1px solid";
+var conbkcolor="#eee9e9";
+var tabbk="#cfcfcf";
+
+t4 = new Bindtabs("tabco4",0,"click","t",border,tabbk,conbkcolor,"400px");
+t4.c();
+}
+
+function vd() {
+}
+
+function tabEvent(evt) {
+    evt = (evt) ? evt : ((window.event) ? window.event : "");
+    if (evt) {
+    var elem = getTargetElement(evt);
+    var actContainer = (elem.tagName=='A') ? elem.parentNode.parentNode.parentNode.id : elem.parentNode.parentNode.id; 
+    var tp = gettab(actContainer).position;
+    var hvelem = (elem.tagName=='A') ? elem.parentNode : elem;
+    var lielem =  (elem.tagName=='A') ? elem.parentNode.parentNode.getElementsByTagName('li') : elem.parentNode.getElementsByTagName('li');
+   
+    if ((evt.type == "mouseover") || (evt.type == "click")) {
+       actIndex = getIndex(lielem,hvelem);
+       if (actIndex==undefined) return;
+   
+         showContent(actContainer,actIndex);
+       } 
+   	}
+}
+
+
+function getIndex(arry,elem) {
+	for (var i=0; i < arry.length; i++) {
+		if (arry[i] == elem) {
+		return i;
+		}
+	}
+}
+ 
+function showContent(container,act) {
+	var contDiv = new Array;
+	var j =0;
+	var tab = gettab(container);
+	var tp = tab.position;
+	var vborder = tab.border;
+	var vboxwidth = tab.width;
+	var vtabcolor =tab.tabcolor;
+	var contDiv0 = $$($(container),('div'));
+	
+	
+	for(var i=0; i<contDiv0.length; i++){
+		if (contDiv0[i].parentNode.id==container) {
+			contDiv[j] = contDiv0[i];
+			j = j+1;
+		}
+    }    
+
+	contDiv[act].className = "content";	    
+		
+	var vbkcolor = getbkColor(contDiv[act]);
+	var tagul = getUL(container,tp);
+	var tagula = $$(tagul,('a'));
+	var tagulli = $$(tagul,('li'));
+
+	for(var i=0; i<tagula.length; i++){
+	    tagula[i].className="ula";
+	}
+
+	for(var i=0; i<tagulli.length; i++){	
+		tagulli[i].className="ullifloat";
+	}
+	tagul.className= "ulnofloat";
+	
+	$(container).style.borderRight = (ie6()==true) ?  containercolor +" 0px solid" : containercolor +" 2px solid";
+	
+	contDiv[act].style.display = "block";
+	
+	for(var i=0; i<contDiv.length; i++){	
+		if (i != act) {
+			contDiv[i].style.display = "none";
+		}
+	}
+
+	var actitem = tagulli[act];
+
+	var actitema = $$(actitem,('a'))[0];
+
+	actitema.style.top ="1px";
+
+	actitem.style.borderTop = vborder;
+
+	actitema.style.backgroundColor =vbkcolor;	
+    var marginRight_li = getmarginRight(actitem);	
+	var marginBottom_li = getmarginBottom(actitem);	
+	
+	for(var i=0; i<tagulli.length; i++){
+		
+	if (marginRight_li=="0px") {			
+			
+			tagulli[i].style.borderLeft = (i==0) ? vborder : "#fff 0px";
+					
+	}
+	
+	
+	if (i != act) {
+	
+	var a = $$(tagulli[i],'a')[0];
+	
+	a.style.top ="0px";	
+	a.style.left ="0px";
+
+	a.style.backgroundColor =vtabcolor;
+
+	tagulli[i].style.borderTop = vborder;	
+		        
+	}
+	
+  }
+}
+  
+function bindEvent(container, e) {
+
+var tp = gettab(container).position;
+var ele = $$(getUL(container,tp),'li');
+
+   for(var i=0; i<ele.length; i++){ 
+		if (e=="click") {
+		   ele[i].onmouseover ="";
+		   ele[i].onclick = tabEvent;
+		}
+		if (e=="mouseover") { 
+		   ele[i].onmouseover = tabEvent;
+		} 	    
+   }
+}
+    
+
+function Bindtabs(id,activetab1,eventType,position,border,tabcolor,bkcolor,width) {	
+    this.id = id;
+	this.activetab1 = activetab1;
+	this.eventType = eventType;
+	this.position = position;
+	this.border =border;
+	this.tabcolor=tabcolor;
+	this.bkcolor=bkcolor;
+	this.width = width;
+
+	this.c = function () {
+	
+showContent(this.id,this.activetab1);
+
+	bindEvent(this.id,this.eventType);
+
+	}
+}
+
+function getUL(id,ttp) {
+
+if ((ttp=="t") || (ttp=="l") ||(ttp=="p")) {
+	var ul = $$($(id),('ul'))[0];
+}
+else
+{
+	var n = $$($(id),('ul')).length;
+	var ul = $$($(id),('ul'))[n-1];
+
+}
+return ul;
+}
+
+function gettab(id) {
+return (id=="tabco4") ? t4 : t1;
+}
+ 
+function ie6() {
+var appVer = navigator.appVersion.toLowerCase();
+var iePos = appVer.indexOf('msie');
+if (iePos !=-1) {
+is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+is_major = parseInt(is_minor);
+}
+
+var is_ie = ((iePos!=-1));
+var is_ie6 = (is_ie && is_major == 6);
+return is_ie6;
+}
+
+function  getmarginBottom(obj) {
+return (obj.currentStyle) ?  obj.currentStyle.marginBottom : getComputedStyle(obj,'').getPropertyValue('margin-bottom');
+}
+
+function getmarginRight(obj) {
+return (obj.currentStyle) ?  obj.currentStyle.marginRight : getComputedStyle(obj,'').getPropertyValue('margin-right');
+}
+
+function getbkColor(obj) {
+return (obj.currentStyle) ?  obj.currentStyle.backgroundColor : getComputedStyle(obj,'').getPropertyValue('background-color');
+}
+
+function getTargetElement(evt) {
+    return (evt.target) ? ((evt.target.nodeType == 3) ? evt.target.parentNode : evt.target) : evt.srcElement;
+}
+
+function $(id){ return(document.getElementById(id)); }
+function $$(e,tag) {return e.getElementsByTagName(tag);}
+
+   </script>	
+</head>
+<body>
+<div id="main_container">
+  <div class="top_bar"> <table align="center">
+  <tr>
+	<td>
+		<div class="top_search">
+			<input name="search" class="search_input" onfocus="if (this.value==' Best Place to Search...') this.value = ''" onblur="if (this.value=='') this.value = ' Best Place to Search...'" type="text" value=" Best Place to Search...">
+			<input type="image" alt="search" title="search" src="images/search.gif" class="search_bt"/>
+		</div>
+	<td>
+		<a href=""><img src="images/facebook.png" class="socialicons" alt="ManyFollowers" title="ManyFollowers"></a>
+	</td>
+	<td>
+		<a href=""><img src="images/google-plus.png" alt="+Souring" class="socialicons1" title="+Souring"></a> 
+	</td>
+	<td>
+		<a href=""><img src="images/twitter.png" alt="YetToStart" class="socialicons1" title="YetToStart" onclick=""></a>
+	</td>
+	<td>
+		<a href="" title="view your recent activities" alt="recent"><img src="images/recent.jpg" class="recent"></a>
+	</td>
+	<td>
+		<a href="" title="view your private messages" alt="Messages"><img src="images/message.jpg" class="messages"></a>
+	</td>
+	<td>
+		<a href="" title="Go Out" alt="Messages"><img src="images/logout.jpg" class="messages"></a>
+	</td>
+	<td>
+		<a href="Home.html" class="logoutButton">Logout</a>
+	</td>
+	</td>
+   </tr>
+  </table>
+
+    </div>
+  <div id="header">
+    <div id="logo"> <a href=""><img src="images/id2d.png" alt="" border="0" width="150" height="135" /></a> </div>
+    <div id="sliderheader">
+		<div class="wrap">
+			<div id="slide-holder">
+				<div id="slide-runner">
+					<a href=""><img id="slide-img-1" src="images/nature-photo.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-2" src="images/nature-photo1.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-3" src="images/nature-photo2.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-4" src="images/nature-photo3.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-5" src="images/nature-photo4.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-6" src="images/nature-photo4.png" class="slide" alt="" /></a>
+					<a href=""><img id="slide-img-7" src="images/nature-photo6.png" class="slide" alt="" /></a> 
+					<div id="slide-controls">
+						<p id="slide-client" class="text"><strong>post: </strong><span></span></p>
+						<p id="slide-desc" class="text"></p>
+						<p id="slide-nav"></p>
+					</div>
+				</div>
+	
+			</div>
+	<script type="text/javascript">
+    if(!window.slider) var slider={};slider.data=[{"id":"slide-img-1","client":"nature beauty","desc":"nature beauty photography"},{"id":"slide-img-2","client":"nature beauty","desc":"add your description here"},{"id":"slide-img-3","client":"nature beauty","desc":"add your description here"},{"id":"slide-img-4","client":"nature beauty","desc":"add your description here"},{"id":"slide-img-5","client":"nature beauty","desc":"add your description here"},{"id":"slide-img-6","client":"nature beauty","desc":"add your description here"},{"id":"slide-img-7","client":"nature beauty","desc":"add your description here"}];
+   </script>
+		</div>
+	</div>
+    <!-- end of oferte_content-->
+  </div>
+  <div id="main_content">
+    <div id="menu_tab">
+   <!--   <div class="left_menu_corner"></div> -->
+   <ul class="menu">
+        <li><a href="Home.html" class="nav1">Home</a></li>
+        <li class="divider"></li>
+        <li><a href="" class="nav2">Deals</a></li>
+		<li class="divider"></li>
+        <li><a href="" class="nav3">Coupons</a></li>
+		<li class="divider"></li>
+        <li><a href="Login.html" class="nav5">Auto-Mobile</a></li>
+        <li class="divider"></li>
+        <li><a href="Login.html" class="nav4">My account</a></li>
+        <li class="divider"></li>
+        <li><a href="" class="nav5">Ask/Share</a></li>
+        <li class="divider"></li>
+   </ul>
+    </div>
+    <div id="space"/>
+	
+	
+	<div id="tabco4">
+	    <ul>
+	         <li><a href="javascript:vd()">Activities</a></li>
+	         <li><a href="javascript:vd()">feedback</a></li>
+	    </ul>
+	    <div>
+		  <div class="left_content">
+			<div class="userdetails">
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="headerpart">
+							<div id="user-image">
+								<img alt="MSRaghava" src="images/avatar_default.jpg" width="100px" height="90px"></img>
+								<form id="avatar-upload-form" class="dropzone dz-clickable" action="/profile/MSRaghava/settings/ajax?save_avatar=true" method="post" enctype="multipart/form-data" name="form">
+									<span>
+									<span class="pencil">
+										<strong class="pencil"></strong>
+										<span>
+											<span>Edit Avatar</span>
+										</span>
+									</span>
+									</span>
+								</form>
+							</div>
+							<h3>MSRaghava</h3>
+						</div>
+						<div class="bodypart">
+							<p><span id="user-description-messages"></span>
+								<span id="user-description-text">
+									<span class="hover">
+										<span class="text">Edit your description</span>
+											<span class="pencil">
+												<strong class="pencil"></strong>
+												
+											</span>
+										</span>
+									</span>
+								</span>
+							</p>
+							<p>
+								<span class="key">Location:</span>
+								<span id="user-location-messages"></span>
+								<span id="user-location-text">
+									<span class="hover"><span class="text">Edit your location</span>
+										<span class="pencil">
+											<strong class="pencil"></strong>
+											
+										</span>
+									</span>
+								</span>
+						    </p>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p><span class="key">Title:</span><strong class="value">Flint</strong></p>
+							<p><span class="key">Member:</span><strong class="value">3 weeks, 4 days  </strong></p>
+							<p><span class="key">Last active:</span><strong class="value">3 weeks, 1 day  </strong></p>
+							<p><span class="key key-float">Likes:</span><strong class="value">0</strong></p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+				<div class="profilecontent">
+					<div class="innercontent">
+					<!--	<div class="header">
+							<h3>Stats</h3>
+						</div> -->
+						<div class="bodypart">
+							<p><span class="title">Updates</span></p>
+							<p><span class="key">Deals Posted:</span><strong class="value">0</strong></p>
+							<p><span class="key">Post Views:</span><strong class="value">0</strong></p>
+							<p><span class="key">Comments:</span><strong class="value">0</strong></p>
+							<p><span class="key key-float">Comments/day:</span><strong class="value">0</strong></p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p><span class="title">Ribbons</span></p>
+							<!--<ul class="ribbons">
+								<li><a href="" rel="nofollow" class="chatty-3"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="pioneer-0"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="contributor-2"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="hotspot-3"><span></span></a></li>
+								<li class="badge-five"><a href="" rel="nofollow" class="editor-0"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="judge-3"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="celebrity-3"><span></span></a></li>
+							</ul> -->
+							<table class="ribbons">
+								<tr>
+									<td><a href=""><img src="images/ribbon1.jpg" height="33px" width="33px" title="Ribbon1"></a></td>
+									<td><a href=""><img src="images/ribbon2.jpg" height="33px" width="33px" title="Ribbon2"></a></td>
+									<td><a href=""><img src="images/ribbon3.jpg" height="33px" width="33px" title="Ribbon3"></a></td>
+									<td><a href=""><img src="images/ribbon4.jpg" height="33px" width="33px" title="Ribbon4"></a></td>
+									<td><a href=""><img src="images/ribbon5.jpg" height="33px" width="33px" title="Ribbon5"></a></td>
+									
+								</tr>
+								<tr>
+									<td><a href=""><img src="images/ribbon6.jpg" height="33px" width="33px" title="Ribbon6"></a></td>
+									<td><a href=""><img src="images/ribbon7.jpg" height="33px" width="33px" title="Ribbon7"></a></td>
+									<td><a href=""><img src="images/ribbon8.jpg" height="33px" width="33px" title="Ribbon8"></a></td>
+									
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		  </div>
+		  <div class="center_content">
+			<div class="activitycontent">
+				<div class="center_title_content">
+					<div class="center_title_bar">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<h1>User Activities</h1>
+								<div class="form">
+									<label for="user_search_top">User Search</label>
+									<div class="input input-text">
+										<input type="text" id="user_search_top" tabindex="210" class="user_search" maxlength="25" autocomplete="off">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="activitydetails">
+					<div class="centerbar">
+						<div class="innercontent">
+							<div class="headercontent">
+								<h3 class="green">
+									<span class="space">Activities(0)</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="centercontent">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<p>You currently have no <strong class="lower-case">Activities</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="activitydetails">
+					<div class="centerbar">
+						<div class="innercontent">
+							<div class="headercontent">
+								<h3 class="green">
+									<span class="space">Subscribed Threads(0)</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="centercontent">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<p>You are not subscribed to any <strong class="lower-case">Threads</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="activitydetails">
+					<div class="centerbar">
+						<div class="innercontent">
+							<div class="headercontent">
+								<h3 class="green">
+									<span class="space">Saved Details(0)</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="centercontent">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<p>You do not have any<strong class="lower-case"> Saved Details</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="activitydetails">
+					<div class="centerbar">
+						<div class="innercontent">
+							<div class="headercontent">
+								<h3 class="green">
+									<span class="space">Following Users(0)</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="centercontent">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<p>You are not following any <strong class="lower-case">Users</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	    <div>
+		 <div class="left_content">
+			<div class="userdetails">
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="headerpart">
+							<div id="user-image">
+								<img alt="MSRaghava" src="images/avatar_default.jpg" width="100px" height="90px"></img>
+								<form id="avatar-upload-form" class="dropzone dz-clickable" action="/profile/MSRaghava/settings/ajax?save_avatar=true" method="post" enctype="multipart/form-data" name="form">
+									<span>
+									<span class="pencil">
+										<strong class="pencil"></strong>
+										<span>
+											<span>Edit Avatar</span>
+										</span>
+									</span>
+									</span>
+								</form>
+							</div>
+							<h3>MSRaghava</h3>
+						</div>
+						<div class="bodypart">
+							<p><span id="user-description-messages"></span>
+								<span id="user-description-text">
+									<span class="hover">
+										<span class="text">Edit your description</span>
+											<span class="pencil">
+												<strong class="pencil"></strong>
+												
+											</span>
+										</span>
+									</span>
+								</span>
+							</p>
+							<p>
+								<span class="key">Location:</span>
+								<span id="user-location-messages"></span>
+								<span id="user-location-text">
+									<span class="hover"><span class="text">Edit your location</span>
+										<span class="pencil">
+											<strong class="pencil"></strong>
+											
+										</span>
+									</span>
+								</span>
+						    </p>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p><span class="key">Title:</span><strong class="value">Flint</strong></p>
+							<p><span class="key">Member:</span><strong class="value">3 weeks, 4 days  </strong></p>
+							<p><span class="key">Last active:</span><strong class="value">3 weeks, 1 day  </strong></p>
+							<p><span class="key key-float">Likes:</span><strong class="value">0</strong></p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p><span class="title">Updates</span></p>
+							<p><span class="key">Deals Posted:</span><strong class="value">0</strong></p>
+							<p><span class="key">Post Views:</span><strong class="value">0</strong></p>
+							<p><span class="key">Comments:</span><strong class="value">0</strong></p>
+							<p><span class="key key-float">Comments/day:</span><strong class="value">0</strong></p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="line"><hr align="center"></hr></div>
+			<!--	<div class="feedbackcontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p>
+								<strong class="feedback feedback-positive">0</strong>
+								<strong class="feedback feedback-negative">0</strong>
+							</p>
+							<p>
+								<span class="title">Feedback</span>
+								<span class="small">(0 total)</span>
+							</p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div> -->
+				<div class="profilecontent">
+					<div class="innercontent">
+						<div class="bodypart">
+							<p><span class="title">Ribbons</span></p>
+							<!--<ul class="ribbons">
+								<li><a href="" rel="nofollow" class="chatty-3"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="pioneer-0"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="contributor-2"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="hotspot-3"><span></span></a></li>
+								<li class="badge-five"><a href="" rel="nofollow" class="editor-0"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="judge-3"><span></span></a></li>
+								<li><a href="" rel="nofollow" class="celebrity-3"><span></span></a></li>
+							</ul> -->
+							<table class="ribbons">
+								<tr>
+									<td><a href=""><img src="images/ribbon1.jpg" height="33px" width="33px" title="Ribbon1"></a></td>
+									<td><a href=""><img src="images/ribbon2.jpg" height="33px" width="33px" title="Ribbon2"></a></td>
+									<td><a href=""><img src="images/ribbon3.jpg" height="33px" width="33px" title="Ribbon3"></a></td>
+									<td><a href=""><img src="images/ribbon4.jpg" height="33px" width="33px" title="Ribbon4"></a></td>
+									<td><a href=""><img src="images/ribbon5.jpg" height="33px" width="33px" title="Ribbon5"></a></td>
+									
+								</tr>
+								<tr>
+									<td><a href=""><img src="images/ribbon6.jpg" height="33px" width="33px" title="Ribbon6"></a></td>
+									<td><a href=""><img src="images/ribbon7.jpg" height="33px" width="33px" title="Ribbon7"></a></td>
+									<td><a href=""><img src="images/ribbon8.jpg" height="33px" width="33px" title="Ribbon8"></a></td>
+									
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		  </div>
+		  <div class="center_content">
+			<div class="activitycontent">
+				<div class="center_title_content">
+					<div class="center_title_bar">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<h1>User Activities</h1>
+								<div class="form">
+									<label for="user_search_top">User Search</label>
+									<div class="input input-text">
+										<input type="text" id="user_search_top" tabindex="210" class="user_search" maxlength="25" autocomplete="off">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="activitydetails">
+					<div class="centerbar">
+						<div class="innercontent">
+							<div class="headercontent">
+								<h3 class="green">
+									<span class="space">Feedback</span>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="centercontent">
+						<div class="innercontent">
+							<div class="bodycontent">
+								<p>You currently have no <strong class="lower-case">feedback</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div> 
+   </div>
+	<!--
+	<div class="left_content">
+		<table width="187" height="350" border="1" class="profile" bgcolor="orange">
+		</table>
+	</div>
+    
+    <div class="center_content">
+	  <div class="prod_box">
+		<table width="714" height="350" border="1" class="profile" bgcolor="white">
+		<tr>
+			<td>
+				<span class="UserInfo">User Information</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="UserInfo">Activities</span>
+			</td>
+		</tr>		
+		<tr>
+			<td>
+				<span class="UserInfo">User Information</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="UserInfo">Activities</span>
+			</td>
+		</tr>
+		</table>
+      </div>
+	</div>
+	
+	<div class="right_content">
+		<table width="187" height="350" border="1" class="profile" bgcolor="green">
+		</table>
+	</div>
+     -->
+  <div class="footer">
+	<div class="innerstats">
+		<div class="statsheader">
+			<h2>ID2D Stats</h2>
+		</div>
+		<div class="statsbody">
+			<div class="stat-block">
+				<span class="stat-title">Now Online:</span>
+				<div class="clear"></div>
+				<span class="stat">8,395</span>
+				<div class="clear"></div> <font size="2px">Guests:
+                        7,880<br> Members:
+                        515</font>
+			</div>
+			<div class="stat-block"><span class="stat-title">Record Users:</span>
+				<div class="clear"></div>
+				<span class="stat">60,104</span>
+			</div>
+			<div class="stat-block">
+				<span class="stat-title">Total Members:</span>
+				<div class="clear"></div>
+				<span class="stat">920,545</span>
+			</div>
+			<div class="stat-block">
+				<span class="stat-title">Posts:</span>
+				<div class="clear"></div>
+				<span class="stat">1,416,012</span>
+			</div>
+			<br>
+		</div>
+	</div>
+    <div class="right_footer"> <a href="Home.html">Home</a> <a href="">Sitemap</a> <a href="">About Us</a> <a href="contact.html">Contact us</a> </div>
+	<marquee behavior="alternate" scrollamount="4"><font color="black" size="2">&reg;</font> All Rights Resereved to ID2D Team</marquee>
+  </div>
+</div>
+
+</body>
+</html>

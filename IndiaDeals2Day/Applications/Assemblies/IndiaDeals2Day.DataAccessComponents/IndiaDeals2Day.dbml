@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Id2d" Class="IndiaDeals2DayDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Tbl_UserRoles" Member="Tbl_UserRoles">
+    <Type Name="Tbl_UserRole">
+      <Column Name="UserRoleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserRoleName" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MasterPage" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_UserRole_Tbl_UserAccess" Member="Tbl_UserAccesses" ThisKey="UserRoleID" OtherKey="UserRoleID" Type="Tbl_UserAccess" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_AskThread" Member="Tbl_AskThreads">
+    <Type Name="Tbl_AskThread">
+      <Column Name="AskThreadID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AskThreadDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="AskThreadStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AskThreadPostedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tbl_AskThread_Tbl_AskThreadResponse" Member="Tbl_AskThreadResponses" ThisKey="AskThreadID" OtherKey="AskThreadID" Type="Tbl_AskThreadResponse" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThread" Member="Tbl_UserAccess" ThisKey="ApprovedBy" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThread1" Member="Tbl_UserAccess1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_AskThreadResponses" Member="Tbl_AskThreadResponses">
+    <Type Name="Tbl_AskThreadResponse">
+      <Column Name="AskThreadResponseID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AskThreadID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResponseDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ResponseStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResponsePostedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tbl_AskThread_Tbl_AskThreadResponse" Member="Tbl_AskThread" ThisKey="AskThreadID" OtherKey="AskThreadID" Type="Tbl_AskThread" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThreadResponse" Member="Tbl_UserAccess" ThisKey="ApprovedBy" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThreadResponse1" Member="Tbl_UserAccess1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Badges" Member="Tbl_Badges">
+    <Type Name="Tbl_Badge">
+      <Column Name="BadgeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BadgeName" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="BadgeDegree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_Badge_Tbl_UserProfile" Member="Tbl_UserProfiles" ThisKey="BadgeID" OtherKey="BadgeID" Type="Tbl_UserProfile" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_VoucherCompany" Member="Tbl_VoucherCompanies">
+    <Type Name="Tbl_VoucherCompany">
+      <Column Name="VoucherCompanyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VoucherCompanyName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VoucherCompanyDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_VoucherCompany_Tbl_Voucher" Member="Tbl_Vouchers" ThisKey="VoucherCompanyID" OtherKey="VoucherCompanyID" Type="Tbl_Voucher" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_VoucherComments" Member="Tbl_VoucherComments">
+    <Type Name="Tbl_VoucherComment">
+      <Column Name="VoucherCommentsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VoucherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CommentDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CommentStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommentPostedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl_Voucher_Tbl_VoucherComment" Member="Tbl_Voucher" ThisKey="VoucherID" OtherKey="VoucherID" Type="Tbl_Voucher" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_VoucherComment" Member="Tbl_UserAccess" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_RecordUsers" Member="Tbl_RecordUsers">
+    <Type Name="Tbl_RecordUser">
+      <Column Name="RecordID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserIpAddress" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RecordedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_DealType" Member="Tbl_DealTypes">
+    <Type Name="Tbl_DealType">
+      <Column Name="DealTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DealType" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="DealTypeDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DisplayOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tbl_DealType_Tbl_Deal" Member="Tbl_Deals" ThisKey="DealTypeID" OtherKey="DealType" Type="Tbl_Deal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_DealComments" Member="Tbl_DealComments">
+    <Type Name="Tbl_DealComment">
+      <Column Name="DealCommentsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DealID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CommentDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CommentStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommentPostedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tbl_UserAccess_Tbl_DealComment" Member="Tbl_UserAccess" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+      <Association Name="Tbl_Deal_Tbl_DealComment" Member="Tbl_Deal" ThisKey="DealID" OtherKey="DealID" Type="Tbl_Deal" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_DealCategories" Member="Tbl_DealCategories">
+    <Type Name="Tbl_DealCategory">
+      <Column Name="DealCategoryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DealCategoryName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_DealCategory_Tbl_Voucher" Member="Tbl_Vouchers" ThisKey="DealCategoryId" OtherKey="DealCategoryId" Type="Tbl_Voucher" />
+      <Association Name="Tbl_DealCategory_Tbl_Deal" Member="Tbl_Deals" ThisKey="DealCategoryId" OtherKey="DealCategoryId" Type="Tbl_Deal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Vouchers" Member="Tbl_Vouchers">
+    <Type Name="Tbl_Voucher">
+      <Column Name="VoucherID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VoucherCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VoucherInstructions" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="VoucherStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="VoucherPostedDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DiscountRate" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="MinimumSpend" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Degree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ApprovedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VoucherURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="VoucherTags" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="VoucherCompanyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DealCategoryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_Voucher_Tbl_VoucherComment" Member="Tbl_VoucherComments" ThisKey="VoucherID" OtherKey="VoucherID" Type="Tbl_VoucherComment" />
+      <Association Name="Tbl_DealCategory_Tbl_Voucher" Member="Tbl_DealCategory" ThisKey="DealCategoryId" OtherKey="DealCategoryId" Type="Tbl_DealCategory" IsForeignKey="true" />
+      <Association Name="Tbl_VoucherCompany_Tbl_Voucher" Member="Tbl_VoucherCompany" ThisKey="VoucherCompanyID" OtherKey="VoucherCompanyID" Type="Tbl_VoucherCompany" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_Voucher" Member="Tbl_UserAccess" ThisKey="ApprovedBy" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_DealPriceCategories" Member="Tbl_DealPriceCategories">
+    <Type Name="Tbl_DealPriceCategory">
+      <Column Name="DealPriceCategoryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StartPrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndPrice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_DealPriceCategory_Tbl_Deal" Member="Tbl_Deals" ThisKey="DealPriceCategoryId" OtherKey="DealPriceCategoryId" Type="Tbl_Deal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_ApplicationLog" Member="Tbl_ApplicationLogs">
+    <Type Name="Tbl_ApplicationLog">
+      <Column Name="Logid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LogMessage" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="LogMessageType" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="LoggedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_UserProfile" Member="Tbl_UserProfiles">
+    <Type Name="Tbl_UserProfile">
+      <Column Name="UserProfileID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DealsCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommentsCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VouchersCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BadgeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tbl_Badge_Tbl_UserProfile" Member="Tbl_Badge" ThisKey="BadgeID" OtherKey="BadgeID" Type="Tbl_Badge" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_UserProfile" Member="Tbl_UserAccess" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Statastics" Member="Tbl_Statastics">
+    <Type Name="Tbl_Statastic">
+      <Column Name="StatId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumberOfUsers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfDeals" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfActiveDeals" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfInActiveDeals" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfVouchers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfActiveVouchers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfInActiveVouchers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_UserPersonalDetails" Member="Tbl_UserPersonalDetails">
+    <Type Name="Tbl_UserPersonalDetail">
+      <Column Name="UserPersonalDetailsID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="MobileNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Tbl_UserAccess_Tbl_UserPersonalDetail" Member="Tbl_UserAccess" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_UserAccess" Member="Tbl_UserAccesses">
+    <Type Name="Tbl_UserAccess">
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserLoginName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="UserPassword" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsUserValid" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserRoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NowOnline" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="UserPicture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThread" Member="Tbl_AskThreads" ThisKey="UserAccessID" OtherKey="ApprovedBy" Type="Tbl_AskThread" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThread1" Member="Tbl_AskThreads1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_AskThread" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThreadResponse" Member="Tbl_AskThreadResponses" ThisKey="UserAccessID" OtherKey="ApprovedBy" Type="Tbl_AskThreadResponse" />
+      <Association Name="Tbl_UserAccess_Tbl_AskThreadResponse1" Member="Tbl_AskThreadResponses1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_AskThreadResponse" />
+      <Association Name="Tbl_UserAccess_Tbl_VoucherComment" Member="Tbl_VoucherComments" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_VoucherComment" />
+      <Association Name="Tbl_UserAccess_Tbl_DealComment" Member="Tbl_DealComments" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_DealComment" />
+      <Association Name="Tbl_UserAccess_Tbl_Voucher" Member="Tbl_Vouchers" ThisKey="UserAccessID" OtherKey="ApprovedBy" Type="Tbl_Voucher" />
+      <Association Name="Tbl_UserAccess_Tbl_UserProfile" Member="Tbl_UserProfiles" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserProfile" />
+      <Association Name="Tbl_UserAccess_Tbl_UserPersonalDetail" Member="Tbl_UserPersonalDetails" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserPersonalDetail" />
+      <Association Name="Tbl_UserAccess_Tbl_Deal" Member="Tbl_Deals" ThisKey="UserAccessID" OtherKey="ApprovedBy" Type="Tbl_Deal" />
+      <Association Name="Tbl_UserAccess_Tbl_Deal1" Member="Tbl_Deals1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_Deal" />
+      <Association Name="Tbl_UserRole_Tbl_UserAccess" Member="Tbl_UserRole" ThisKey="UserRoleID" OtherKey="UserRoleID" Type="Tbl_UserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Deals" Member="Tbl_Deals">
+    <Type Name="Tbl_Deal">
+      <Column Name="DealID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserAccessID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DealStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealPrice" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DealTopicName" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DealDescription" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DealDegree" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealPostedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ApprovedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealPicture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DealStartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DealEndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DealCategoryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealPriceCategoryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DealImageData" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Tbl_Deal_Tbl_DealComment" Member="Tbl_DealComments" ThisKey="DealID" OtherKey="DealID" Type="Tbl_DealComment" />
+      <Association Name="Tbl_UserAccess_Tbl_Deal" Member="Tbl_UserAccess" ThisKey="ApprovedBy" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+      <Association Name="Tbl_DealCategory_Tbl_Deal" Member="Tbl_DealCategory" ThisKey="DealCategoryId" OtherKey="DealCategoryId" Type="Tbl_DealCategory" IsForeignKey="true" />
+      <Association Name="Tbl_DealPriceCategory_Tbl_Deal" Member="Tbl_DealPriceCategory" ThisKey="DealPriceCategoryId" OtherKey="DealPriceCategoryId" Type="Tbl_DealPriceCategory" IsForeignKey="true" />
+      <Association Name="Tbl_DealType_Tbl_Deal" Member="Tbl_DealType" ThisKey="DealType" OtherKey="DealTypeID" Type="Tbl_DealType" IsForeignKey="true" />
+      <Association Name="Tbl_UserAccess_Tbl_Deal1" Member="Tbl_UserAccess1" ThisKey="UserAccessID" OtherKey="UserAccessID" Type="Tbl_UserAccess" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

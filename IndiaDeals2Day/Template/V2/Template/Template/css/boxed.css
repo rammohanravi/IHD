@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: url('../images/boxed-bg.jpg') repeat-x , url('../images/boxed-bg2.jpg') repeat !important ;
+	background-position: left top, left bottom;	
+}
+
+
+
+
+.logo {left:25px;}
+
+.boxed {width:1224px !important; overflow:hidden; background:#171717;}
+.header {width:1224px;}
+.header .container {margin:0px auto;}
+.slider-box {top:40%; width:50%;}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+.boxed {width:100% !important; overflow:hidden;}
+.header {width:100% !important}	
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+.boxed {width:100% !important; overflow:hidden;}
+.header {width:100% !important}	
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.boxed {width:100% !important; overflow:hidden;}
+.header {width:100% !important}	
+}

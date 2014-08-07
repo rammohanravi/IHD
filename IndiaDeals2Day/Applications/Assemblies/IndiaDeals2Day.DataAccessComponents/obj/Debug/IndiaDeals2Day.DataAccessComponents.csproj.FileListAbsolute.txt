@@ -1,0 +1,16 @@
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.dll.config
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.dll
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.pdb
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.SharedComponents.pdb
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\IndiaDeals2Day.DataAccessComponents.dll
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\IndiaDeals2Day.DataAccessComponents.pdb
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.dll.config
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.dll
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.DataAccessComponents.pdb
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\bin\Debug\IndiaDeals2Day.SharedComponents.pdb
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\IndiaDeals2Day.DataAccessComponents.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\IndiaDeals2Day.DataAccessComponents.dll
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.DataAccessComponents\obj\Debug\IndiaDeals2Day.DataAccessComponents.pdb

@@ -1,0 +1,88 @@
+1) Logo Image adding to title
+2) Adding Bubble effect to all three social net working images
+3) Adding OnMouseOver event to Login and Signup
+4) Adding Lables(All, Deals, Coupons) to the search area
+
+
+1) Categories Drop-down Menu
+2) Hi-Rated, Latest and All products display in horizantal view
+3) Latest Product and News Letter Subscription boxes in right margin
+4)Tweet/fb Count display in left margin area with falling-down window style
+
+Login form : http://cssdeck.com/labs/batman-login-form
+
+http://html-color-codes.info/color-names/
+http://www.ascii.cl/htmlcodes.htm
+
+http://www.bestcssbuttongenerator.com/
+
+http://pixlr.com/editor/
+
+http://www.dreamcss.com/2009/04/create-beautiful-jquery-sliders.html
+http://designmodo.com/responsive-slider/
+
+view-source:http://www.webdesignerwall.com/demo/css3-dropdown-menu/
+
+1) Above that black bar , on left hand top corner , write the indiandeals2day.com in Red colour or in some colour 
+2) I am referring to use the box style of categories as the similar to that of  Top finds which you can see in homeshop18.com
+3) Change the font styles of the deals in horizontal deals to the style of amazon   ----- priority1
+4) make the share a deal and share a voucher colour same to that of shopnow option in homeshop18.com
+5) make background full white  ----- priority1
+6) add the buttons of High and Low for every deal that is displaying in horizontal view , on right side of the deal( Refer hotukdeals.com)  --- priority1
+7) Add image of Red chilly side to High and yellow chilli side to Low button of every deal .
+---------------------------------------
+1) Siva it seems font is good for the deal heading , changing it to red colour is also nice
+2) description should be little bit blurred. currently it is dominating
+3) Price tag need to be included for every deal
+4) There should be an option of get a deal on every deal -- hotukdeals.com
+5) user name and the time from which the deal is available
+6) rating should be given above the hot and cold option
+7) line shoulde be bifurcating the deals
+8) image should be separated vertically by line or a spearate box for an image ....
+
+23-Nov-2013
+-----------
+1) GET DEAL , HIGH , SHARE ADEAL , SHARE A COUPON all should be in same colour of button . Present colour of GETDEAL is not good . I would suggest all these buttons to be in orange colour.
+2) The slider above menu  need to be adjusted 1 mm left and right to equate to menu . 
+3) LOW button should be in dull colour , is should be the same colour of what we use in menu
+4) Top black bar is bit fat , it need to be adjusted to the same width of bottom black bars we use.
+5) why the top black bar is not full black. even though it looks nice , i suspect the back ground is not full white that is causing this . even the surronding of logo is not full white . so make back ground full white please in all places.
+
+24-Nov-2013
+-----------
+1) search bar should start from the position of where slider is getting started, this makes facebook,google,twitter will end atthe position of end of slider  .Signup and Login should be at the right most corner of the black bar .
+2) Add the option of automobile in the main menu side to Coupons . so the menu should contain , Home,Deals,Coupons,Automobile,Ask/Share , Myaccount 
+3) I have repositioned share a deal and share a coupon. Because with current design we cant add any extra to menu in future so i re positioned these two 
+4) the submenu of Hi-rated and latest and all deals font should be not as bright as main menu,
+5) categories to be appended before the sub menu , as we decided earlier .
+6) High and low button font should be bit reduced., dont reduce button size  add + to High and - to Low to make the good feel
+
+Registered Users
+Current users online
+Previous day users count
+
+----------------------------------------
+Useful softwares
+---------------------------------------
+http://goo.gl/FZpTqo - Image Editor - http://www.getpaint.net/doc/latest/MoveTools.html (Tool Description)
+http://goo.gl/gcaeMA - MS Office alternative
+http://goo.gl/1jDTPM - Video converter
+http://goo.gl/cmekA0 - Phrase Expresser English
+
+1800-425-4999
+(080) 2563 3555
+080-3030-4499
+
+10,000+2462+845+835+741+382 = 15265
+
+Feb-8
+
++SAPTHAGIRI EXP
+
+rvkkumar36
+rfr384
+
+R Vijay Kumar 33
+M Pragathi 33
+R Sai karthik 4
+R Harshini 2

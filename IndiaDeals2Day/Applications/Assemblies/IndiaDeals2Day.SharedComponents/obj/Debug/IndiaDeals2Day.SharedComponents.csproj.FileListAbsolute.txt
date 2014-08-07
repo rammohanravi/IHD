@@ -1,0 +1,9 @@
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\bin\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\bin\Debug\IndiaDeals2Day.SharedComponents.pdb
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\obj\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\IBM_ADMIN\Documents\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\obj\Debug\IndiaDeals2Day.SharedComponents.pdb
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\bin\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\bin\Debug\IndiaDeals2Day.SharedComponents.pdb
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\obj\Debug\IndiaDeals2Day.SharedComponents.dll
+C:\Users\User\Documents\My Documents Data\My Projects\IndiaDeals2Day\Applications\Assemblies\IndiaDeals2Day.SharedComponents\obj\Debug\IndiaDeals2Day.SharedComponents.pdb
