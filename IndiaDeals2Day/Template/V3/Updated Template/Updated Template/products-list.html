@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Template</title>
+
+<!--Site Mata Tags start Here -->
+<meta name="description" content="Template">
+<meta name="keywords" content="Template">
+<meta name="author" content="Crunch Press">
+ <!-- FAVICON -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" ><!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Style Sheets Start Here -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/megamenu.css" rel="stylesheet">
+<!-- Custom Styleheet -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="css/color-light.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Fontawsome -->
+
+<!-- Color Css Files Start -->
+<link rel="stylesheet" type="text/css" href="css/color-red.css" title="styles-red" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-blue.css" title="styles-blue" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-orange.css" title="styles-orange" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-aqua.css" title="styles-aqua" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-green.css" title="styles-green" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-purple.css" title="styles-purple" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-light.css" title="styles-light" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/boxed.css" title="styles-boxed" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/wide.css" title="styles-wide" media="screen" />
+<!-- Color Css Files End -->
+
+</head>
+<body>
+
+
+<!-- Main Wrapper Starts here -->
+<div class="wrapper home boxed"> 
+  
+  <!-- topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="top-black">
+        <div class="row">
+          <div class="span6">
+            <div id="loginContainer"> <span class="welcome">Welcome visitor you can <a href="#" id="loginButton"><span>Login</span></a> or <a href="register.html">create an account!</a></span>
+              <div style="clear:both"></div>
+              <div id="loginBox">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <fieldset>
+                      <label for="email">Email Address</label>
+                      <input type="text" name="email" id="email" />
+                    </fieldset>
+                    <fieldset>
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </fieldset>
+                    <input type="submit" id="login" value="Login" />
+                    <input type="submit" id="register" value="Register" />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <!-- Login Ends Here --> 
+            
+          </div>
+          <div class="span6">
+            <div class="topbar-dropdowns">
+              
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> My Account <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#login">Login</a></li>
+                  <li><a href="#register">Register</a></li>
+                </ul>
+              </div>
+              <div class="btn-group top-search">
+                <div id="searchContainer"> <span class="welcome"><a href="#" id="searchButton"><i class="fa fa-search"></i></a></span>
+                  <div style="clear:both"></div>
+                  <div id="searchBox">
+                    <form id="searchForm">
+                      Search Here <small>*</small>
+                      <fieldset id="search">
+                        <fieldset>
+                          <input type="text" name="email"/>
+                        </fieldset>
+                        <input type="submit" name="Search" value="Search">
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="top-social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- topbar end --> 
+  
+  <!-- Header Start -->
+  <div class="header">
+    <div class="container">
+      <div class="row"> 
+        <!-- Logo -->
+        <div class="span3">
+          <div class="logo"><a href="index.html" title="Avetor Sports"> <img src="images/logo.png" alt="Avetor Sports"> </a></div>
+        </div>
+        <!-- Logo end -->
+        <div class="span9">
+          <div class="nav-holder">
+            <nav id="nav">
+              <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                  <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <div class="nav-collapse collapse">
+                    <div class="menu">
+                      <ul class="menu" id="mm">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="activemm"><a href="products-list.html" class="arrow">Deals</a> 
+                          
+                           
+                        </li>
+                        <li><a href="products-list.html" class="arrow">Coupons</a> 
+                          
+                           
+                        </li>
+                        
+                        <li><a href="#" class="arrow">Pages</a> 
+                          <!-- Drop-Down / Start -->
+                          <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faqs.html">FAQ's</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="password.html">Password</a></li>
+                            <li><a href="#">Gallery</a>
+                              <ul>
+                                <li><a href="gallery-col-2.html">Gallery Two Col</a></li>
+                                <li><a href="gallery-col-3.html">Gallery Three Col</a></li>
+                                <li><a href="gallery-col-4.html">Gallery Four Col</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Shop</a>
+                              <ul>
+                                <li><a href="products.html">Products Grid View</a></li>
+                                <li><a href="products-list.html">Products List View</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">Account</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="location-locator.html">Location</a></li>
+                          </ul>
+                          <!-- Drop-Down / End --> 
+                        </li>
+                       <li><a href="blog.html" class="arrow">Blog</a></li>
+                        <li><a href="contactus.html" class="arrow">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--/.nav-collapse --> 
+                </div>
+                <!-- /.navbar-inner --> 
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End --> 
+  
+  <!-- Slider Start -->
+  <div class="inner-header-bg"> </div>
+  <!-- Slider End --> 
+  
+  <!-- ============================ Main Title Start ================================= -->
+  <div class="inner-title">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> <strong class="title">Products</strong>
+          <h4>Curabitur vul putate</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Title End ================================= --> 
+  
+  <!-- ============================ Main Content Start ================================= -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="product-navigation">
+            <div class="title">Shop</div>
+            <div>
+              <ul id="side-nav">
+                <li> <a href="#">Footwear<span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><strong>Accessories Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Cold Weather</a></li>
+                        <li><a href="#">Bags and Wallets</a></li>
+                        <li><a href="#">Belts</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Ties and Hats</a></li>
+                        <li><a href="#">Socks</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Gifts and Tech</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><strong>Footwear Womens</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li><a href="#">Slippers and Clogs</a></li>
+                        <li><a href="#">Flats</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><strong>Sneakers</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Wedges and Heels</a></li>
+                        <li><a href="#">Sandals and Flip Flops</a></li>
+                        <li><a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                    <li> <a href="#"><strong>Accessories Womens</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Cold Weather</a></li>
+                        <li><a href="#">Fashion Scarves</a></li>
+                        <li><a href="#">Bags and Wristlets</a></li>
+                        <li><a href="#">Belts</a></li>
+                        <li><a href="#">Socks</a></li>
+                        <li><a href="#">Tights and Leggings</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Gifts and Tech</a></li>
+                        <li><a href="#">Fragrance</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#">Women <span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span> </a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#">Man <span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#">Jewelry <span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#">Accessories <span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li> <a href="#">Furniture <span class="fa arrow"></span><span class="fa plus-minus"></span></a>
+                  <ul>
+                    <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                      <ul class="sub">
+                        <li><a href="#">Boots</a></li>
+                        <li> <a href="#">Casuals</a></li>
+                        <li> <a href="#">Slippers</a></li>
+                        <li> <a href="#">Sneakers</a></li>
+                        <li> <a href="#">Brands We Love</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="price-range"> <strong>Price Range</strong>
+              <ul>
+                <li> <a href="#">Under $120.00</a></li>
+                <li><a href="#">$120.00        – <span>$249.00</span></a></li>
+                <li><a href="#">$250.00        – <span>$329.00</span></a></li>
+                <li><a href="#">$330.00        – <span>$699.00</span></a></li>
+                <li><a href="#">Over $700.00</a></li>
+                <li><a href="#">Show All</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="span9">
+          <div class="row-fluid pro-topbar">
+            <div class="span6"><span> View Products:</span> </div>
+            <div class="span6 pull-right">
+              <div class="pagination">
+                <ul>
+                  <li><a href="#">Prev</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="list-view">
+              <div class="row-fluid list-pro">
+                <div class="span3">
+                  <div class="pro-img"><a href="product-details.html"><img src="images/pro-img1.png" alt=""></a></div>
+                </div>
+                <div class="span9">
+                  <h3>Men’s Reckon Bagpack</h3>
+                   <div class="pull-right"><span ><i><img src="images/degree.png"></i></a></span></div>  
+                  <div class="pull-right"><span ><a href="#"><i><img src="images/like.png"></i></a></span><br/><span ><a href="#"><i><img src="images/unlike.png"></i></a></span></div>
+                  <ul class="hot-deal-options">
+                    <li class="price">$82.00</li>
+                    
+                    <li class="reviews">Comments</li>
+                  </ul>
+                  <p>Suspendisse potenti. Aenean eu sagittis arcu, id aliquet magna. Nulla posuere ultricies purus vitae laoreet. Nunc sed dapibus enim. Suspendisse condimentum ornare sapien, et convallis nisl auctor non. Curabitur tincidunt sem vitae diam auctor, eu pulvinar elit varius. </p>
+                  <ul class="hotdeal-options">
+                    <li class="colors"> <strong>Name:</strong> <a href="#"></a> <a href="#"></a> </li>
+                    <li class="size"><strong>Date:</strong> <a href="#"></a> <a href="#"></a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="row-fluid list-pro">
+                <div class="span3">
+                  <div class="pro-img"><a href="product-details.html"><img src="images/pro-img2.png" alt=""></a></div>
+                </div>
+                <div class="span9">
+                  <h3>Men’s Reckon Bagpack</h3>
+                  <div class="pull-right"><span ><i><img src="images/degree.png"></i></a></span></div>  
+                  <div class="pull-right"><span ><a href="#"><i><img src="images/like.png"></i></a></span><br/><span ><a href="#"><i><img src="images/unlike.png"></i></a></span></div>
+                  <ul class="hot-deal-options">
+                    <li class="price">$82.00</li>
+                    
+                    <li class="reviews">Comments</li>
+                  </ul>
+                  <p>Suspendisse potenti. Aenean eu sagittis arcu, id aliquet magna. Nulla posuere ultricies purus vitae laoreet. Nunc sed dapibus enim. Suspendisse condimentum ornare sapien, et convallis nisl auctor non. Curabitur tincidunt sem vitae diam auctor, eu pulvinar elit varius. </p>
+                  <ul class="hotdeal-options">
+                    <li class="colors"> <strong>Name:</strong> <a href="#"></a> <a href="#"></a> </li>
+                    <li class="size"><strong>Date:</strong> <a href="#"></a> <a href="#"></a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="row-fluid list-pro">
+                <div class="span3">
+                  <div class="pro-img"><a href="product-details.html"><img src="images/pro-img3.png" alt=""></a></div>
+                </div>
+                <div class="span9">
+                  <h3>Men’s Reckon Bagpack</h3>
+                   <div class="pull-right"><span ><i><img src="images/degree.png"></i></a></span></div>  
+                  <div class="pull-right"><span ><a href="#"><i><img src="images/like.png"></i></a></span><br/><span ><a href="#"><i><img src="images/unlike.png"></i></a></span></div>
+                  <ul class="hot-deal-options">
+                    <li class="price">$82.00</li>
+                    
+                    <li class="reviews">Comments</li>
+                  </ul>
+                  <p>Suspendisse potenti. Aenean eu sagittis arcu, id aliquet magna. Nulla posuere ultricies purus vitae laoreet. Nunc sed dapibus enim. Suspendisse condimentum ornare sapien, et convallis nisl auctor non. Curabitur tincidunt sem vitae diam auctor, eu pulvinar elit varius. </p>
+                  <ul class="hotdeal-options">
+                    <li class="colors"> <strong>Name:</strong> <a href="#"></a> <a href="#"></a> </li>
+                    <li class="size"><strong>Date:</strong> <a href="#"></a> <a href="#"></a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="row-fluid list-pro">
+                <div class="span3">
+                  <div class="pro-img"><a href="product-details.html"><img src="images/pro-img1.png" alt=""></a></div>
+                </div>
+                <div class="span9">
+                  <h3>Men’s Reckon Bagpack</h3>
+                   <div class="pull-right"><span ><i><img src="images/degree.png"></i></a></span></div>  
+                  <div class="pull-right"><span ><a href="#"><i><img src="images/like.png"></i></a></span><br/><span ><a href="#"><i><img src="images/unlike.png"></i></a></span></div>
+                  <ul class="hot-deal-options">
+                    <li class="price">$82.00</li>
+                    
+                    <li class="reviews">Comments</li>
+                  </ul>
+                  <p>Suspendisse potenti. Aenean eu sagittis arcu, id aliquet magna. Nulla posuere ultricies purus vitae laoreet. Nunc sed dapibus enim. Suspendisse condimentum ornare sapien, et convallis nisl auctor non. Curabitur tincidunt sem vitae diam auctor, eu pulvinar elit varius. </p>
+                  <ul class="hotdeal-options">
+                    <li class="colors"> <strong>Name:</strong> <a href="#"></a> <a href="#"></a> </li>
+                    <li class="size"><strong>Date:</strong> <a href="#"></a> <a href="#"></a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="row-fluid list-pro">
+                <div class="span3">
+                  <div class="pro-img"><a href="product-details.html"><img src="images/pro-img2.png" alt=""></a></div>
+                </div>
+                <div class="span9">
+                  <h3>Men’s Reckon Bagpack</h3>
+                
+                <div class="pull-right"><span ><i><img src="images/degree.png"></i></a></span></div>  
+                  <div class="pull-right"><span ><a href="#"><i><img src="images/like.png"></i></a></span><br/><span ><a href="#"><i><img src="images/unlike.png"></i></a></span></div>
+                  <ul class="hot-deal-options">
+                    <li class="price">$82.00</li>
+                    
+                    <li class="reviews">Comments</li>
+                  </ul>
+                  <p>Suspendisse potenti. Aenean eu sagittis arcu, id aliquet magna. Nulla posuere ultricies purus vitae laoreet. Nunc sed dapibus enim. Suspendisse condimentum ornare sapien, et convallis nisl auctor non. Curabitur tincidunt sem vitae diam auctor, eu pulvinar elit varius. </p>
+                  <ul class="hotdeal-options">
+                    <li class="colors"> <strong>Name:</strong> <a href="#"></a> <a href="#"></a> </li>
+                    <li class="size"><strong>Date:</strong> <a href="#"></a> <a href="#"></a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="bottom-pagination">
+              <div class="pagination">
+                <ul>
+                  <li><a href="#">Prev</a></li>
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Content End ================================= --> 
+  
+  <!-- ============================ Brand Logo Start  ================================= -->
+  <div class="footer-logo">
+    <div class="container">
+      <div class="row">
+        <div class="span12"><img src="images/footer-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Brand Logo End  ================================= --> 
+  
+  <!-- ============================ Footer Strart  ================================= -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <h3>Accesiories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Archery</a></li>
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Bodybuilding</a></li>
+            <li><a href="#">Bowling</a></li>
+            <li><a href="#">Boxing</a></li>
+            <li><a href="#">Gymnastics</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h3>Our Offers</h3>
+          <ul class="footer-links">
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Top sellers</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Orders History</a></li>
+          </ul>
+        </div>
+        <div class="span3 twitter">
+          <h3>Latest Tweets</h3>
+          <p>Lucky enough to have The Internet in the office @ billygatesom     		http://t.co/ZKQXRDx8aM
+            about an hour ago</p>
+          <p> @twsjonathan We've got a dev on it now. Thanks again minim :) <br>
+            ^ CA<br>
+            about 4 hours ago </p>
+        </div>
+        <div class="span3">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Lorem LTD<br>
+              United Kingdom<br>
+              Oxford Street 48/188<br>
+              Working Days: Mon. - Sun.<br>
+              Working Hours: 9.00AM - 8.00PM</p>
+          </div>
+          <h3>Join Now</h3>
+          <ul class="footer-social">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter-square"></i></li>
+            <li><i class="fa fa-google-plus-square"></i></li>
+            <li><i class="fa fa-pinterest-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-2">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h3>Latest Blog</h3>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog1.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog2.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog3.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="span4"> <img src="images/footer-mag.jpg" alt=""> </div>
+        <div class="span3">
+          <div class="footer-form">
+            <h3>Contact Us</h3>
+            <p>Cras ac leo accumsan, aliquam odio eu, pellentesque enim</p>
+            <ul>
+              <li>
+                <label>Name</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Email</label>
+                <input name="" type="email">
+              </li>
+              <li>
+                <label>Website</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Comment</label>
+                <textarea name="" rows="4"></textarea>
+              </li>
+              <li>
+                <input type="button" value="Submit" name="Submit">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ============================ Footer End  ================================= --> 
+  
+  <!-- ============================ Copyright Start  ================================= -->
+  <div class="footer-copyrights">
+    <div class="container">
+      <div class="row">
+        <div class="span6">&copy; 2014. Template. All Right Reserved. </div>
+        <div class="span6"><img src="images/cart-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Copyright End  ================================= --> 
+  
+</div>
+<!-- Main Wrapper End here --> 
+
+<!--Js Files Starts Here --> 
+<script type="text/javascript" src="js/jquery.min.js"></script><!--Jquery --> 
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script><!--bootstrap --> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script><!--easing --> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script><!--easing --> 
+<script src="js/jquery.metisMenu.js"></script>
+<script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script><!-- Left Tab --> 
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Switcher --> 
+<script type="text/javascript" src="js/custom.js"></script><!--Custom -->
+  
+<script type="text/javascript" src="lib/forms/form.js"></script><!-- Form --> 
+<script src="js/modernizr.custom.html"></script><!--Js Files End Here -->
+</body>
+</html>

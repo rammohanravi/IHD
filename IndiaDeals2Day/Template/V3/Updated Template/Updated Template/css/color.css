@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body, p, td, li {
+	color: #7a7a7a;
+}
+a {
+	color: #bd0102;
+}
+
+
+.red-bg, .top-social, .footer-logo, .pro-bottom .pcart, .topbar, .home-latest .title, .sidebar-widget .btn-primary:hover, .comment-form input[type="submit"]:hover, .cart-coupon input[type="submit"]:hover, 
+.drbox, .purchase, .main-nav ul.megamenu > li a:hover, .main-nav ul.megamenu > li.active, .slider-box li a:hover, .slider-box li.active, .home-testimonials .bx-wrapper 
+.bx-pager.bx-default-pager a:hover, .home-testimonials .bx-wrapper .bx-pager.bx-default-pager a.active, ul.footer-links li a:hover, .megamenu > li:hover > a, .megamenu > li .active > a, 
+.as-content .content-as .content .pro-area, .bs-hover .bs-content .content .pro-area, .grid-view li.pro-name,    .readmore-button:hover, .top-social, .stuff-title > button:hover, .filter-form input[type="submit"]:hover,
+.csstransforms3d .megamenu a:hover span:before, .csstransforms3d .megamenu a:focus span:before,
+.csstransforms3d .megamenu a:hover span:before, .csstransforms3d .megamenu a:focus span:before,
+#loginForm input[type="submit"]:hover, #searchForm input[type="submit"]:hover, .footer-form input[type="button"]:hover, .place-order, .submit_btn:hover, .register input[type="submit"]:hover, .login input[type="submit"]:hover, .sidebar-widget .btn-primary:hover, .comment-form input[type="submit"]:hover, .cart-coupon input[type="submit"]:hover, .cart-footer input[type="submit"]:hover, .top-search input[type="submit"]:hover
+
+ {
+	background: #bd0102;
+}
+#loginButton span, .product-details .pro-head a:hover, .stuff-title h2 span, .testi-text span, .testimonials-left strong, .hot-deal .reviews, .list-view .reviews, .brand-logo .bx-wrapper a.bx-prev:hover:after, .brand-logo .bx-wrapper a.bx-next:hover:after, .nbs-flexisel-ul li div.caption h4, .iconbg2 > a, .share-post li a:hover, ul.footer-blog li.details strong a:hover, ul.footer-social li a:hover
+
+ {
+	color: #bd0102;
+}
+.yellow-bg, .topbar .dropdown-menu > li > a:hover, .topbar .dropdown-menu > li > a:focus, .topbar .dropdown-submenu:hover > a, .topbar .dropdown-submenu:focus > a, .hcart, .side-banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .side-banner .bx-wrapper .bx-pager.bx-default-pager a.active, .stuff-title button, .jspDrag, .hot-deal .like a, .hot-deal .cart a, .list-view .like a, .list-view .cart a, .stuff-title button, .readmore-button, .sidebar-widget h2, .special-pro-slider .bx-controls, .cart-top-bg, .product-navigation .title, .pro-details-slider .bx-wrapper .badge, .product-details .quantity .addtocart {
+	background: #ffc000;
+}
+.yellow-text, .top-social a:hover, .inner-title h4, .main-title h2, .home-events-title h2, .pro-topbar .fa:hover, .grid-view li.pro-icons .fa:hover, .product-details .price strong, .cart-footer .gtotal, .blog-tools .readmore a, .news-tools .readmore a, .auther-details .replay a:before, .about-text .about-pics strong, .about-text .about-pics span, .about-text .note span, .why-us h4.panel-title a, .team-box a, .p404 span, .contact-icons a, .contact-form .fa, .price-range strong, .hot-deal .price, .list-view .price, .hot-deal .rating-stars, .list-view .rating-stars, .testimonial .icons .fa:hover, .select-colors a, .product-navigation strong, a:hover, a:focus {
+	color: #ffc000;
+}
+.white-text, .topbar .top-search, .topbar .top-search .fa, .top-social a, .top-selects a, .nav-last .fa, .pro-bottom .pcart a {
+	color: #FFF;
+}
+.border-color, .side-banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .side-banner .bx-wrapper .bx-pager.bx-default-pager a.active, .blog-details > p:nth-last-child(1) {
+	border-color: #ffc000;
+}
+.border-color, .slider #bx-pager > a:hover, .slider #bx-pager .active, .home-events {
+	border-color: #bd0102;
+}
+.top-search input[type="search"], .top-search input[type="submit"] {
+	display: block;
+	border-radius: 0px;
+	border: 0px;
+}
+#loginForm input[type="submit"], #searchForm input[type="submit"], .footer-form input[type="button"], .place-order, .submit_btn, .register input[type="submit"], .login input[type="submit"], .sidebar-widget .btn-primary, .comment-form input[type="submit"], .cart-coupon input[type="submit"], .cart-footer input[type="submit"], .top-search input[type="submit"] {
+	background: #ffc000;
+	border: 0px;
+}
+.about-text .quote, .twitter li:hover {
+	border-left-color: #ffc000
+}
+.testi-slider .image img, .testimonial img {
+	border-bottom-color: #FFCC00;
+}
+.top-social:before {
+	border-right-color: #bd0102;
+}
+.home-latest .title:before {
+	border-color: #bd0102 transparent transparent transparent;
+}
+#loginForm input[type="submit"]:hover, #searchForm input[type="submit"]:hover, .footer-form input[type="button"]:hover, .place-order, .submit_btn:hover, .register input[type="submit"]:hover, .login input[type="submit"]:hover, .sidebar-widget .btn-primary:hover, .comment-form input[type="submit"]:hover, .cart-coupon input[type="submit"]:hover, .cart-footer input[type="submit"]:hover, .top-search input[type="submit"]:hover {
+	background: #bd0102;
+	color: #FFF
+}

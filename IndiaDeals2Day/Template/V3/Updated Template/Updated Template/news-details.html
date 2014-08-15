@@ -1,0 +1,796 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Template</title>
+
+<!--Site Mata Tags start Here -->
+<meta name="description" content="Template">
+<meta name="keywords" content="Template">
+<meta name="author" content="Crunch Press">
+ <!-- FAVICON -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" ><!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Style Sheets Start Here -->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet"><link href="css/megamenu.css" rel="stylesheet"><!-- Custom Styleheet -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="css/color-light.css" rel="stylesheet" type="text/css">
+<!-- Color Styleheet -->
+<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="lib/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Fontawsome -->
+
+<!-- Color Css Files Start -->
+<link rel="stylesheet" type="text/css" href="css/color-red.css" title="styles-red" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-blue.css" title="styles-blue" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-orange.css" title="styles-orange" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-aqua.css" title="styles-aqua" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-green.css" title="styles-green" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-purple.css" title="styles-purple" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/color-light.css" title="styles-light" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/boxed.css" title="styles-boxed" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/wide.css" title="styles-wide" media="screen" />
+<!-- Color Css Files End -->
+
+</head>
+<body>
+
+
+<!-- Main Wrapper Starts here -->
+<div class="wrapper home boxed"> 
+  
+  <!-- topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="top-black">
+        <div class="row">
+          <div class="span6">
+            <div id="loginContainer"> <span class="welcome">Welcome visitor you can <a href="#" id="loginButton"><span>Login</span></a> or <a href="register.html">create an account!</a></span>
+              <div style="clear:both"></div>
+              <div id="loginBox">
+                <form id="loginForm">
+                  <fieldset id="body">
+                    <fieldset>
+                      <label for="email">Email Address</label>
+                      <input type="text" name="email" id="email" />
+                    </fieldset>
+                    <fieldset>
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </fieldset>
+                    <input type="submit" id="login" value="Login" />
+                    <input type="submit" id="register" value="Register" />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <!-- Login Ends Here --> 
+            
+          </div>
+          <div class="span6">
+            <div class="topbar-dropdowns">
+              
+              <div class="btn-group"> <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> My Account <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#login">Login</a></li>
+                  <li><a href="#register">Register</a></li>
+                </ul>
+              </div>
+              <div class="btn-group top-search">
+                <div id="searchContainer"> <span class="welcome"><a href="#" id="searchButton"><i class="fa fa-search"></i></a></span>
+                  <div style="clear:both"></div>
+                  <div id="searchBox">
+                    <form id="searchForm">
+                      Search Here <small>*</small>
+                      <fieldset id="search">
+                        <fieldset>
+                          <input type="text" name="email"/>
+                        </fieldset>
+                        <input type="submit" name="Search" value="Search">
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="top-social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- topbar end --> 
+  
+  <!-- Header Start -->
+  <div class="header">
+    <div class="container">
+      <div class="row"> 
+        <!-- Logo -->
+        <div class="span3">
+          <div class="logo"><a href="index.html" title="Avetor Sports"> <img src="images/logo.png" alt="Avetor Sports"> </a></div>
+        </div>
+        <!-- Logo end -->
+        <div class="span9">
+          <div class="nav-holder">
+            <nav id="nav">
+              <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                  <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <div class="nav-collapse collapse">
+                    <div class="menu">
+                      <ul class="menu" id="mm">
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="products-list.html" class="arrow">Deals</a> 
+                          
+                           
+                        </li>
+                        <li><a href="products-list.html" class="arrow">Coupons</a> 
+                          
+                           
+                        </li>
+                        
+                        <li class="activemm"><a href="#" class="arrow">Pages</a> 
+                          <!-- Drop-Down / Start -->
+                          <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faqs.html">FAQ's</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="password.html">Password</a></li>
+                            <li><a href="#">Gallery</a>
+                              <ul>
+                                <li><a href="gallery-col-2.html">Gallery Two Col</a></li>
+                                <li><a href="gallery-col-3.html">Gallery Three Col</a></li>
+                                <li><a href="gallery-col-4.html">Gallery Four Col</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Shop</a>
+                              <ul>
+                                <li><a href="products.html">Products Grid View</a></li>
+                                <li><a href="products-list.html">Products List View</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">Account</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="location-locator.html">Location</a></li>
+                          </ul>
+                          <!-- Drop-Down / End --> 
+                        </li>
+                       <li><a href="blog.html" class="arrow">Blog</a></li>
+                        <li><a href="contactus.html" class="arrow">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--/.nav-collapse --> 
+                </div>
+                <!-- /.navbar-inner --> 
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End --> 
+  
+  <!-- Slider Start -->
+  <div class="inner-header-bg"> </div>
+  <!-- Slider End --> 
+  
+  <!-- ============================ Main Title Start ================================= -->
+  <div class="inner-title">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> <strong class="title">News Detail</strong>
+          <h4>Here is our News Detail</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Title End ================================= --> 
+  
+  <!-- ============================ Main Content Start ================================= -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="span8"> 
+          
+          <!--Blog Post -->
+          <div class="news-post"> <a href="#" class="thumbnail"> <img src="images/news_02.jpg" alt=""> </a>
+            <div class="news-caption">
+              <h4>Vis id minim dicant sensibus.</h4>
+              <div class="blog-post-text blog-details">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque consectetur blandit. Pellentesque accumsan, eros ut blandit facilisis, enim dolor porta erat, vitae pulvinar massa purus ut quam. Phasellus a bibendum metus. Nam sed est dolor. Mauris euismod convallis consequat. Mauris magna lacus, consectetur et eleifend non, lacinia nec mi. Cras sem elit, suscipit a accumsan vel, pharetra et velit. Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper. Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis, aliquam nulla ultricies, cursus libero.</p>
+                <p> Quisque lacinia turpis vitae felis luctus consequat. Sed id faucibus justo, non dignissim elit. Duis orci nulla, venenatis id dignissim eu, ultricies sed dui. Fusce et ultrices metus. Donec tincidunt varius purus, vitae faucibus libero adipiscing nec. Nunc id purus tortor. Mauris blandit laoreet ante, quis aliquam tellus mollis vel. Vestibulum quam justo, rhoncus vel auctor vel, fermentum vel elit. Nulla facilisi.</p>
+                <p> Morbi leo eros, dictum et massa rhoncus, elementum laoreet nisl. Aenean rhoncus libero eu nunc dignissim, id condimentum sem commodo. Nulla ultricies dui non arcu gravida imperdiet ut eu felis. Nam gravida elit dapibus diam euismod accumsan. Proin condimentum in urna id varius. Integer et nisl interdum, pellentesque enim et, vulputate sem. Nam non turpis et nisi laoreet luctus ut id nisi. Sed ac cursus odio, eu convallis enim. Integer vel congue mi. Curabitur volutpat rutrum ultrices. </p>
+                <p> Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+              </div>
+             <div class="news-tools">
+                  <ul>
+                    <li class="share"><i class="fa fa-share-square-o"></i> 569 Shares</li>
+                    <li class="views"><i class="fa fa-eye"></i> 3,152 Views </li>
+                    <li class="post-date"><i class="fa fa-comment"></i> 21 Comments</li>
+                    <li class="readmore pull-right"> <a class="more-btn" href="#"><i class="fa fa-plus-circle"></i> Hide Text</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <!--Blog Post End --> 
+          
+          <!--Share Post -->
+          <div class="share-post">
+            <ul>
+              <li>SHARE</li>
+              <li> <a href="#" class="fb" title="Facebook"><i class="fa fa-facebook-square"></i></a> <a href="#" class="tw" title="Twitter"><i class="fa fa-twitter-square"></i></a> <a href="#" class="in" title="Linkedin"><i class="fa fa-linkedin-square"></i></a> <a href="#" class="gplus" title="GPlus"><i class="fa fa-google-plus-square"></i></a> <a href="#" class="pint" title="Pinterest"> <i class="fa fa-pinterest-square"></i></a> <a href="#" class="vimeo" title="Vimeo"><i class="fa fa-vimeo-square"></i></a> <a href="#" class="tumblr" title="Tumblr"><i class="fa fa-tumblr-square"></i></a> <a href="#" class="instagram" title="Instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="flickr" title="Flickr"><i class="fa fa-flickr"></i></a> <a href="#" class="youtube" title="Youtube"> <i class="fa fa-youtube-square"></i></a> </li>
+            </ul>
+          </div>
+          <!--share Post --> 
+          
+          <!-- Comments -->
+          
+          <div class="blog-comments">
+            <div>
+              <h2>22 Comments</h2>
+              <ul class="comments-list">
+                <li>
+                  <div class="auther-img"> <a href="#" class="thumbnail"><img alt="user" src="images/author-icon.jpg"></a> </div>
+                  <div class="auther-details"> <strong> Jhon Doe</strong> <span class="date">26 June 2013, 15:20</span><span class="replay"><a href="#">Reply</a></span>
+                    <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. </p>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="auther-img"> <a href="#" class="thumbnail"><img alt="user" src="images/author-icon.jpg"></a> </div>
+                      <div class="auther-details"> <strong> Jhon Doe</strong> <span class="date">26 June 2013, 15:20</span> <span class="replay"><a href="#">Reply</a></span>
+                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. </p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="auther-img"> <a href="#" class="thumbnail"><img alt="user" src="images/author-icon.jpg"></a> </div>
+                  <div class="auther-details"> <strong> Jhon Doe</strong> <span class="date">26 June 2013, 15:20</span><span class="replay"><a href="#">Reply</a></span>
+                    <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Comments End --> 
+          
+          <!-- Comments Form -->
+          <div class="comment-form">
+            <h2>Leave a commnet</h2>
+             <form action="#" method="post">
+            <ul>
+                <li>
+                  <label>Name</label>
+                  <input type="text" name="name">
+                </li>
+                
+                <li>
+                  <label>E-mail</label>
+                  <input type="email" name="name">
+                </li>
+                
+                <li>
+                  <label>Web site</label>
+                  <input type="text" name="name">
+                </li>
+                
+                <li>
+                  <textarea name="comments" rows="5"> Comments</textarea>
+                </li>
+                
+                <li>
+                  <input type="submit" value="Send">
+                </li>
+              
+              
+            </ul>
+            </form>
+          </div>
+          <!-- Comments Form End --> 
+          
+        </div>
+        
+        <!--Side bar start -->
+        <div class="span4 sidebar"> 
+          
+          <!--social start -->
+          <div class="widget sidebar-widget social">
+            <ul>
+              <li class="fb"><i class="fa fa-facebook"></i> <span>156k</span> <span class="pull-right">Follow <i class="fa fa-plus-circle"></i></span> </li>
+              <li class="twitter"><i class="fa fa-twitter"></i> <span>156k</span> <span class="pull-right">Follow <i class="fa fa-plus-circle"></i></span> </li>
+              <li class="gplus"><i class="fa fa-google-plus"></i> <span>156k</span> <span class="pull-right">Follow <i class="fa fa-plus-circle"></i></span> </li>
+            </ul>
+          </div>
+          <!--social end --> 
+          
+          <!--search start -->
+          <div class="widget sidebar-widget search">
+            <h2>Search</h2>
+            <div class="content">
+              <div class="search-sidebar">
+                <input type="email" name="email" value="Type here">
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+          <!--search end --> 
+          
+          <!--Shop Links start -->
+          <div class="widget sidebar-widget shop-links">
+            <h2>Shop</h2>
+            <div class="content">
+              <div class="product-navigation">
+                <ul id="side-nav">
+                  <li> <a href="#">Footwear<span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="#"><strong>Accessories Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Cold Weather</a></li>
+                          <li><a href="#">Bags and Wallets</a></li>
+                          <li><a href="#">Belts</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Ties and Hats</a></li>
+                          <li><a href="#">Socks</a></li>
+                          <li><a href="#">Sunglasses</a></li>
+                          <li><a href="#">Gifts and Tech</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="#"><strong>Footwear Womens</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li><a href="#">Slippers and Clogs</a></li>
+                          <li><a href="#">Flats</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="#"><strong>Sneakers</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Wedges and Heels</a></li>
+                          <li><a href="#">Sandals and Flip Flops</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="#"><strong>Accessories Womens</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Cold Weather</a></li>
+                          <li><a href="#">Fashion Scarves</a></li>
+                          <li><a href="#">Bags and Wristlets</a></li>
+                          <li><a href="#">Belts</a></li>
+                          <li><a href="#">Socks</a></li>
+                          <li><a href="#">Tights and Leggings</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Sunglasses</a></li>
+                          <li><a href="#">Gifts and Tech</a></li>
+                          <li><a href="#">Fragrance</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Women <span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Man <span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Jewelry <span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Accessories <span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Furniture <span class="fa arrow"></span></a>
+                    <ul>
+                      <li> <a href="#"><strong>Footwear Man</strong><span class="fa arrow"></span></a>
+                        <ul class="sub">
+                          <li><a href="#">Boots</a></li>
+                          <li> <a href="#">Casuals</a></li>
+                          <li> <a href="#">Slippers</a></li>
+                          <li> <a href="#">Sneakers</a></li>
+                          <li> <a href="#">Brands We Love</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Shop Links end --> 
+          
+          <!--What’s Hot start -->
+          <div class="widget sidebar-widget whats-hot">
+            <h2>What’s Hot</h2>
+            <div class="content">
+              <ul class="whats-hotslider">
+                <li>
+                  <ul class="thumbnails">
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-01.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-02.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-03.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="thumbnails">
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-03.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-02.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-01.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="thumbnails">
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-02.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-01.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail"> <img src="images/wh-03.jpg" alt="">
+                        <div class="caption">
+                          <p>A New Yorker doesn't necessarily come from... </p>
+                          <small>3 minutes ago</small> </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--What’s Hot end --> 
+          
+          <!--What’s Hot start -->
+          <div class="widget sidebar-widget special-pro-slider">
+            <div class="content-proslider">
+              <ul class="special-pro">
+                <li> <img src="images/side-shirt2.png" alt="">
+                  <h3>Special Offers</h3>
+                </li>
+                <li> <img src="images/side-shirt.png" alt="">
+                  <h3>Special Offers</h3>
+                </li>
+                <li> <img src="images/side-shirt3.png" alt="">
+                  <h3>Special Offers</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--What’s Hot end --> 
+          
+          <!--Special Product Start -->
+          <div class="widget sidebar-widget twitter">
+            <div class="title">
+              <h2><span class="tw-icon"><i class="fa fa-twitter"></i></span> Tweetz <span>My twitter feed</span></h2>
+            </div>
+            <div class="content">
+              <ul>
+                <li>
+                  <p>Experience more with expanded Tweets <a href="#">http://t.co/8gH7sqUE</a> <small>18 hours ago</small> </p>
+                </li>
+                <li>
+                  <p>Experience more with expanded Tweets <a href="#">http://t.co/8gH7sqUE</a> <small>18 hours ago</small> </p>
+                </li>
+                <li>
+                  <p>Experience more with expanded Tweets <a href="#">http://t.co/8gH7sqUE</a> <small>18 hours ago</small> </p>
+                </li>
+                <li>
+                  <p>Experience more with expanded Tweets <a href="#">http://t.co/8gH7sqUE</a> <small>18 hours ago</small> </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Special Product End --> 
+          
+          <!--Twitter Start -->
+          <div class="widget sidebar-widget">
+            <h2>Ask a Question</h2>
+            <div class="content">
+              <div class="search-sidebar">
+                <div>
+                  <form>
+                    <input type="text" name="your-name" value="Your name">
+                    <input type="email" name="email" value="hello@mail.com">
+                    <textarea name="username" rows="5">Your question...</textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Twitter End  --> 
+          
+          <!--Tags Start -->
+          <div class="widget sidebar-widget tags">
+            <h2>Tags</h2>
+            <div class="content">
+              <ul>
+                <li><a href="#">resource</a></li>
+                <li><a href="#">design</a></li>
+                <li><a href="#">art</a></li>
+                <li><a href="#">design</a></li>
+                <li><a href="#">icon</a></li>
+                <li><a href="#">photoshop</a></li>
+                <li><a href="#">template</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--Tags End  --> 
+          
+          <!--Twitter Start -->
+          <div class="widget sidebar-widget">
+            <h2>Join the newsletter</h2>
+            <div class="content newsletter"> <i class="fa fa-envelope-o"></i>
+              <input class="newsletter" type="email" name="email" value="yourname@mail.com">
+              <input type="submit" value="Subscribe" class="btn btn-primary">
+            </div>
+          </div>
+          <!--Twitter End  --> 
+          
+        </div>
+        <!--Side bar End --> 
+        
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Main Content End ================================= --> 
+  
+  <!-- ============================ Brand Logo Start  ================================= -->
+  <div class="footer-logo">
+    <div class="container">
+      <div class="row">
+        <div class="span12"><img src="images/footer-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Brand Logo End  ================================= --> 
+  
+  <!-- ============================ Footer Strart  ================================= -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <h3>Accesiories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Archery</a></li>
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Bodybuilding</a></li>
+            <li><a href="#">Bowling</a></li>
+            <li><a href="#">Boxing</a></li>
+            <li><a href="#">Gymnastics</a></li>
+          </ul>
+        </div>
+        <div class="span3">
+          <h3>Our Offers</h3>
+          <ul class="footer-links">
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Top sellers</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Manufacturers</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Discount</a></li>
+            <li><a href="#">Orders History</a></li>
+          </ul>
+        </div>
+        <div class="span3 twitter">
+          <h3>Latest Tweets</h3>
+          <p>Lucky enough to have The Internet in the office @ billygatesom     		http://t.co/ZKQXRDx8aM
+            about an hour ago</p>
+          <p> @twsjonathan We've got a dev on it now. Thanks again minim :) <br>
+            ^ CA<br>
+            about 4 hours ago </p>
+        </div>
+        <div class="span3">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Lorem LTD<br>
+              United Kingdom<br>
+              Oxford Street 48/188<br>
+              Working Days: Mon. - Sun.<br>
+              Working Hours: 9.00AM - 8.00PM</p>
+          </div>
+          <h3>Join Now</h3>
+          <ul class="footer-social">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter-square"></i></li>
+            <li><i class="fa fa-google-plus-square"></i></li>
+            <li><i class="fa fa-pinterest-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-2">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h3>Latest Blog</h3>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog1.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog2.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+          <ul class="footer-blog">
+            <li class="image"> <img src="images/fblog3.jpg" alt=""> </li>
+            <li class="details"> <strong><a href="#">Duis mauris tellus</a></strong> <span> Jan 05, 2014 </span>
+              <p>Sed congue enim tortor, vel eleifend risus venenatis in. Mauris vulputate quam in nisi aliquet pulvinar. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="span4"> <img src="images/footer-mag.jpg" alt=""> </div>
+        <div class="span3">
+          <div class="footer-form">
+            <h3>Contact Us</h3>
+            <p>Cras ac leo accumsan, aliquam odio eu, pellentesque enim</p>
+            <ul>
+              <li>
+                <label>Name</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Email</label>
+                <input name="" type="email">
+              </li>
+              <li>
+                <label>Website</label>
+                <input name="" type="text">
+              </li>
+              <li>
+                <label>Comment</label>
+                <textarea name="" rows="4"></textarea>
+              </li>
+              <li>
+                <input type="button" value="Submit" name="Submit">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ============================ Footer End  ================================= --> 
+  
+  <!-- ============================ Copyright Start  ================================= -->
+  <div class="footer-copyrights">
+    <div class="container">
+      <div class="row">
+        <div class="span6">&copy; 2014. Template. All Right Reserved. </div>
+        <div class="span6"><img src="images/cart-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================ Copyright End  ================================= --> 
+  
+</div>
+<!-- Main Wrapper End here --> 
+
+<!--Js Files Starts Here --> 
+<script type="text/javascript" src="js/jquery.min.js"></script><!--Jquery --> 
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script><!--bootstrap --> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script><!--easing -->
+<script type="text/javascript" src="js/jquery.bxslider.js"></script><!--easing --> 
+<script src="js/jquery.metisMenu.js"></script> <!--Product Left Menu -->
+<script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script><!-- Left Tab --> 
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Switcher -->  
+<script type="text/javascript" src="js/custom.js"></script><!--Custom -->
+  
+<script src="js/modernizr.custom.html"></script><!--Js Files End Here -->
+</body>
+</html>

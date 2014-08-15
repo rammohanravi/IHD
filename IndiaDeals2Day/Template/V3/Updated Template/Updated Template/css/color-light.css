@@ -1,0 +1,49 @@
+body, .top-black, .topbar .dropdown-menu, #loginForm, #searchForm, .header, .slider-pager,  .sale-banner, .best-seller .product-scroller, .product-navigation, .pro-img, .instock, .product-details .quantity .minus, .product-details .quantity .plus, .product-details .quantity .input-text.qty, .vertical-slider-bg, .testi-bg, .why-us .panel-default, .faq h4.panel-title a.collapsed, .why-us h4.panel-title a.collapsed, .team-box, .sidebar-widget .content, .sidebar-widget .content-proslider, .blog-post .blog-caption, .news-post .news-caption,
+.testimonial, .cart_table_holder table, .cart-coupon, .cart-footer .text-box, .checkout-page, .pinfo, .order-review
+
+ {background:#FFF !important}
+
+.topbar .btn-group, #loginForm input, #searchForm input, .slider #bx-pager > a, .best-seller .product-scroller, .product-scroller .bestseller > li, .grid-view .pro-img,
+.pro-description .tabs-left > .nav-tabs .active > a, .pro-description .tabs-left > .nav-tabs .active > a:hover, .pro-description .tabs-left > .nav-tabs .active > a:focus, .why-us .panel-default,
+.skills h2, .why-us h2, .team h2, .contact-form h2, .team-box, .blog-post .blog-caption, .news-post .news-caption, .blog-post .blog-caption h4, .news-post .news-caption h4, .news-post .news-tools ul > li, .news-post-text, .testimonial, .testimonial .icons .fa, .cart_table_holder table, .cart-coupon, .cart-footer .text-box,
+.cart_table_holder table .product-name, .cart_table_holder th, .cart_table_holder tbody td, .cart_table_holder tfoot td, #loginBox, #searchBox, .blog-post-text, .news-post-text, 
+.blog-tools .readmore, .blog-tools .post-author
+
+{border-color:#e5e5e5}
+
+.topbar .welcome, .topbar .top-search .fa, #loginForm, #searchForm, #loginForm #body fieldset label, .megamenu > li > a, .slider #bx-pager > a:hover, .slider #bx-pager .active, .slider #bx-pager > a,
+.main-title .title, .stuff-title h2, .stuff-title p, .home-testimonials h2, .testimonials-left p, .testi-text p,
+.best-seller h2, .hot-deal .deals h2, .deals h3, .list-view h3, .inner-title .title, .nav-last .fa, .pro-topbar, .instock, .product-details .quantity .minus, .product-details .quantity .plus, .product-details .quantity .input-text.qty, .product_meta span, .vertical-slider-bg .bx-wrapper .bx-controls-direction a.bx-next:after, .vertical-slider-bg .bx-wrapper .bx-controls-direction a.bx-prev:after,
+.pro-description .tabs-left > .nav-tabs .active > a, .pro-description .tabs-left > .nav-tabs .active > a:hover, .pro-description .tabs-left > .nav-tabs .active > a:focus,
+.pro-description .tab-content #des li span, .skills h2, .why-us h2, .team h2, .contact-form h2, .faq h4.panel-title a.collapsed:after, .why-us h4.panel-title a.collapsed:after, .faq h4.panel-title a:after, .why-us h4.panel-title a:after, .password .search button, .search-sidebar button, .faq h4.panel-title a, .locations h2, 
+.blog-tools .post-date, .blog-tools .post-comment a, .blog-tools .post-tags a, .blog-tools .post-author a, .menu ul li a
+
+ {color:#000 !important}
+ 
+ .home-latest {border:#cecece solid 1px;} 
+  
+ .main-title, .inner-title  {background:url(../images/light/main-title-bg.jpg);}
+ .home-events, .new-stuff-bg, .home-testimonials, .best-seller, .brand-logo, .main-content {background:url(../images/light/pattren2.jpg);}
+ .hot-deal{background:url(../images/light/pat3.jpg);}
+ 
+ .new-stuff-bg, .sale-banner {border-top:#e3e3e3 solid 1px; border-bottom:#e3e3e3 solid 1px;}
+ 
+ .home-testimonials .bx-wrapper .bx-pager.bx-default-pager a, .testi-details:before {background:#000}
+ 
+ .testi-bg:before {  border-top: 40px solid #FFFFFF; }
+ 
+ 
+ .p404 input[type="email"], .password input[type="email"], .sidebar-widget input[type="email"], .sidebar-widget input[type="text"], .sidebar-widget textarea, .comment-form input[type="text"], .comment-form input[type="email"], .comment-form textarea, .cart-coupon input[type="text"], .cart-footer input[type="text"], .cart-footer select, .register input[type="text"], .login input[type="text"], .cart-footer .text-box, .checkout-page input[type="text"]
+ 
+ {background:#FFF; border:#e5e5e5 solid 1px;}
+ 
+ .share-post, .auther-details p, .contact-note, .cicon {background:#e5e5e5}
+
+.p404 .title, .p404 strong {color:#000;}
+
+.megamenu .caret {
+    border-top: 4px solid #000;
+    vertical-align: middle;
+}
+
+.menu .mega-menu a, .menu ul ul li a {color:#FFF !important}
