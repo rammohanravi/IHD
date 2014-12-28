@@ -1,5 +1,5 @@
 github.com
-Rammohanraavi
-Target@2014
+Rammohanravi
+Target@2015
 
-https://github.com/ID2D/Indiahotdeals.git
+https://github.com/rammohanravi/IndiaDeals2Day.git
